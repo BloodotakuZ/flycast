@@ -26,6 +26,10 @@
 #include "oslib/oslib.h"
 #include <algorithm>
 
+#if defined(LIBRETRO) && !defined(USE_GGPO)
+#define USE_GGPO 1
+#endif
+
 namespace ggpo
 {
 
@@ -298,7 +302,10 @@ static bool load_game_state(unsigned char *buffer, int len)
 	memwatch::unprotect();
 	for (int f = lastSavedFrame - 1; f >= frame; f--)
 	{
-		const MemPages& pages = deltaStates[f];
+		auto it = deltaStates.find(f);
+		if (it == deltaStates.end())
+			continue;
+		const MemPages& pages = it->second;
 		for (const auto& pair : pages.ram)
 			memcpy(memwatch::ramWatcher.getMemPage(pair.first), &pair.second.data[0], PAGE_SIZE);
 		for (const auto& pair : pages.vram)
@@ -331,28 +338,38 @@ static bool load_game_state(unsigned char *buffer, int len)
 static bool save_game_state(unsigned char **buffer, int *len, int *checksum, int frame)
 {
 	verify(!emu.getSh4Executor()->IsCpuRunning());
-	lastSavedFrame = frame;
-	// TODO this is way too much memory
-	size_t allocSize = settings.platform.isNaomi() ? 20_MB : 10_MB;
-	*buffer = (unsigned char *)malloc(allocSize);
+	size_t stateSize;
+	try {
+		Serializer sizer(true);
+		sizer << frame;
+		dc_serialize(sizer);
+		stateSize = sizer.size();
+	} catch (const Serializer::Exception& e) {
+		WARN_LOG(NETWORK, "Save state sizing failed: %s", e.what());
+		*len = 0;
+		return false;
+	}
+	*buffer = (unsigned char *)malloc(stateSize);
 	if (*buffer == nullptr)
 	{
 		WARN_LOG(NETWORK, "Memory alloc failed");
 		*len = 0;
 		return false;
 	}
-	Serializer ser(*buffer, allocSize, true);
 	try {
+		Serializer ser(*buffer, stateSize, true);
 		ser << frame;
 		dc_serialize(ser);
-		*len = ser.size();
+		*len = (int)ser.size();
 	} catch (const Serializer::Exception& e) {
+		free(*buffer);
 		WARN_LOG(NETWORK, "Save state failed: %s", e.what());
 		*len = 0;
 		return false;
 	}
+	lastSavedFrame = frame;
 #ifdef SYNC_TEST
-	*checksum = XXH3_64bits(*buffer, usedSize);
+	*checksum = XXH3_64bits(*buffer, *len);
 #endif
 	memwatch::protect();
 	if (frame > 0)
