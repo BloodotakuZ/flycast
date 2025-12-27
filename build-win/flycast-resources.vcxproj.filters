@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\lib.cpp">
+      <Filter>build-win\__cmrc_flycast-resources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\alienfnt.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\gunsur2.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\mazan.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\otrigger.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\wldkicks.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\wldkicksj.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\wldkicksu.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\f355.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\f355twin.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\f355twn2.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\dirtypig.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\dirtypig.nvmem2.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\vf4.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\vf4evob.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\vf4tuned.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\magicpop.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\ochaken.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\puyomedal.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\unomedal.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\westdrmg.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\flash\smarinef.nvmem.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\picture\f355_print_template.png.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\picture</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\fonts\printer_ascii8x16.bin.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\fonts\printer_ascii12x24.bin.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\fonts\printer_kanji16x16.bin.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\fonts\printer_kanji24x24.bin.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\fonts\Roboto-Medium.ttf.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\fonts\Roboto-Regular.ttf.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\fonts\fa-solid-900.ttf.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\__cmrc_flycast-resources\intermediate\fonts\biosfont.bin.zip.cpp">
+      <Filter>build-win\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\43f48bb920621b2659f90df089bf2b00\lib.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\alienfnt.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\gunsur2.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\mazan.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\otrigger.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\wldkicks.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\wldkicksj.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\wldkicksu.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\f355.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\f355twin.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\f355twn2.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\dirtypig.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\dirtypig.nvmem2.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\vf4.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\vf4evob.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\vf4tuned.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\magicpop.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\ochaken.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\puyomedal.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\unomedal.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\westdrmg.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\8a3a4d8fbf43a22fca27e4e719abeb27\smarinef.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\3650021915f9db77924f07a9a8d0aea4\f355_print_template.png.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\302be12eb136f79ea3562e4bd02b7bd1\printer_ascii8x16.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\302be12eb136f79ea3562e4bd02b7bd1\printer_ascii12x24.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\302be12eb136f79ea3562e4bd02b7bd1\printer_kanji16x16.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\302be12eb136f79ea3562e4bd02b7bd1\printer_kanji24x24.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\302be12eb136f79ea3562e4bd02b7bd1\Roboto-Medium.ttf.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\302be12eb136f79ea3562e4bd02b7bd1\Roboto-Regular.ttf.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\302be12eb136f79ea3562e4bd02b7bd1\fa-solid-900.ttf.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\302be12eb136f79ea3562e4bd02b7bd1\biosfont.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CE6D8F7D-66A4-3C9B-AE92-7B6B1B52F5C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-win">
+      <UniqueIdentifier>{F2AB6133-0152-3C70-BF76-11C5E141B019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-win\__cmrc_flycast-resources">
+      <UniqueIdentifier>{4C2E1DBF-694A-30E3-8F69-49C0902E6D5F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-win\__cmrc_flycast-resources\intermediate">
+      <UniqueIdentifier>{C1735854-E1AA-371B-8C48-B9A58C145D73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-win\__cmrc_flycast-resources\intermediate\flash">
+      <UniqueIdentifier>{CA552C32-5681-3FE4-AF42-466CB5E6532B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-win\__cmrc_flycast-resources\intermediate\fonts">
+      <UniqueIdentifier>{69CC13E2-86C1-3F51-AF5E-05AD3E8C43AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-win\__cmrc_flycast-resources\intermediate\picture">
+      <UniqueIdentifier>{3C6C8D79-990A-3BA6-A09D-AEA26E647C9F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

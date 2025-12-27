@@ -1,0 +1,26 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/CMakeLists.txt
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/cmake-config.h.in
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/cmake-zipconf.h.in
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/cmake/Dist.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/libzip-config.cmake.in
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/libzip.pc.in

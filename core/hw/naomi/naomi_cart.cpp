@@ -1181,11 +1181,13 @@ bool M2Cartridge::GetBootId(RomBootID *bootId)
 }
 
 void M2Cartridge::Serialize(Serializer& ser) const {
-	ser << naomi_cart_ram;
+	if (!ser.rollback())
+		ser << naomi_cart_ram;
 	NaomiCartridge::Serialize(ser);
 }
 
 void M2Cartridge::Deserialize(Deserializer& deser) {
-	deser >> naomi_cart_ram;
+	if (!deser.rollback())
+		deser >> naomi_cart_ram;
 	NaomiCartridge::Deserialize(deser);
 }

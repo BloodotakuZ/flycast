@@ -1,0 +1,10 @@
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\D68E0FF94438A9E22645D4A637A828EE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/flycast_libretro.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

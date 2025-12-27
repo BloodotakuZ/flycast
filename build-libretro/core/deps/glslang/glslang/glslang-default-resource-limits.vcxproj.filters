@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\ResourceLimits\ResourceLimits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\ResourceLimits\resource_limits_c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Public\ResourceLimits.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Public\resource_limits_c.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Public">
+      <UniqueIdentifier>{3BF3F51F-519F-3A95-A909-07DDC09B561D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C29A6413-6F7A-33D1-8A28-3CD14706132A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

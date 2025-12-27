@@ -184,7 +184,10 @@ elseif(LIBRETRO)
 	set(CMAKE_SHARED_LIBRARY_PREFIX "")
 	set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 	target_compile_definitions(${PROJECT_NAME} PRIVATE LIBRETRO)
-	target_compile_options(${PROJECT_NAME} PRIVATE -Wno-misleading-indentation)
+	if(NOT MSVC)
+		# GCC/Clang only: MSVC does not understand this warning toggle
+		target_compile_options(${PROJECT_NAME} PRIVATE -Wno-misleading-indentation)
+	endif()
 	if(APPLE)
 		find_library(FOUNDATION Foundation)
 		target_link_libraries(${PROJECT_NAME} PRIVATE ${FOUNDATION})
@@ -880,7 +883,8 @@ if(LIBRETRO)
 		core/deps/libretro-common/compat/fopen_utf8.c
 		core/deps/libretro-common/compat/compat_strcasestr.c
 		core/deps/libretro-common/file/retro_dirent.c
-		core/deps/libretro-common/string/stdstring.c)
+		core/deps/libretro-common/string/stdstring.c
+		shell/libretro/msvc_compat.c)
 	if(USE_OPENGL)
 		target_sources(${PROJECT_NAME} PRIVATE
 			core/deps/libretro-common/glsm/glsm.c
@@ -1301,44 +1305,44 @@ if((USE_OPENGL OR USE_GLES2 OR USE_GLES) AND NOT LIBRETRO)
 	target_link_libraries(${PROJECT_NAME} PRIVATE glad)
 endif()
 
+target_include_directories(${PROJECT_NAME} PRIVATE core/deps/ggpo/include core/deps/ggpo/lib/ggpo)
+target_sources(${PROJECT_NAME} PRIVATE
+	core/deps/ggpo/lib/ggpo/bitvector.cpp
+	core/deps/ggpo/lib/ggpo/bitvector.h
+	core/deps/ggpo/lib/ggpo/game_input.cpp
+	core/deps/ggpo/lib/ggpo/game_input.h
+	core/deps/ggpo/lib/ggpo/input_queue.cpp
+	core/deps/ggpo/lib/ggpo/input_queue.h
+	core/deps/ggpo/lib/ggpo/main.cpp
+	core/deps/ggpo/lib/ggpo/platform_linux.cpp
+	core/deps/ggpo/lib/ggpo/platform_linux.h
+	core/deps/ggpo/lib/ggpo/platform_windows.cpp
+	core/deps/ggpo/lib/ggpo/platform_windows.h
+	core/deps/ggpo/lib/ggpo/poll.cpp
+	core/deps/ggpo/lib/ggpo/ggpo_poll.h
+	core/deps/ggpo/lib/ggpo/ring_buffer.h
+	core/deps/ggpo/lib/ggpo/static_buffer.h
+	core/deps/ggpo/lib/ggpo/sync.cpp
+	core/deps/ggpo/lib/ggpo/sync.h
+	core/deps/ggpo/lib/ggpo/timesync.cpp
+	core/deps/ggpo/lib/ggpo/timesync.h
+	core/deps/ggpo/lib/ggpo/ggpo_types.h
+
+	core/deps/ggpo/lib/ggpo/backends/backend.h
+	core/deps/ggpo/lib/ggpo/backends/p2p.cpp
+	core/deps/ggpo/lib/ggpo/backends/p2p.h
+	core/deps/ggpo/lib/ggpo/backends/spectator.cpp
+	core/deps/ggpo/lib/ggpo/backends/spectator.h
+	core/deps/ggpo/lib/ggpo/backends/synctest.cpp
+	core/deps/ggpo/lib/ggpo/backends/synctest.h
+
+	core/deps/ggpo/lib/ggpo/network/udp_msg.h
+	core/deps/ggpo/lib/ggpo/network/udp_proto.cpp
+	core/deps/ggpo/lib/ggpo/network/udp_proto.h
+	core/deps/ggpo/lib/ggpo/network/udp.cpp
+	core/deps/ggpo/lib/ggpo/network/udp.h)
+
 if(NOT LIBRETRO)
-	target_include_directories(${PROJECT_NAME} PRIVATE core/deps/ggpo/include core/deps/ggpo/lib/ggpo)
-	target_sources(${PROJECT_NAME} PRIVATE
-		core/deps/ggpo/lib/ggpo/bitvector.cpp
-		core/deps/ggpo/lib/ggpo/bitvector.h
-		core/deps/ggpo/lib/ggpo/game_input.cpp
-		core/deps/ggpo/lib/ggpo/game_input.h
-		core/deps/ggpo/lib/ggpo/input_queue.cpp
-		core/deps/ggpo/lib/ggpo/input_queue.h
-		core/deps/ggpo/lib/ggpo/main.cpp
-		core/deps/ggpo/lib/ggpo/platform_linux.cpp
-		core/deps/ggpo/lib/ggpo/platform_linux.h
-		core/deps/ggpo/lib/ggpo/platform_windows.cpp
-		core/deps/ggpo/lib/ggpo/platform_windows.h
-		core/deps/ggpo/lib/ggpo/poll.cpp
-		core/deps/ggpo/lib/ggpo/ggpo_poll.h
-		core/deps/ggpo/lib/ggpo/ring_buffer.h
-		core/deps/ggpo/lib/ggpo/static_buffer.h
-		core/deps/ggpo/lib/ggpo/sync.cpp
-		core/deps/ggpo/lib/ggpo/sync.h
-		core/deps/ggpo/lib/ggpo/timesync.cpp
-		core/deps/ggpo/lib/ggpo/timesync.h
-		core/deps/ggpo/lib/ggpo/ggpo_types.h
-
-		core/deps/ggpo/lib/ggpo/backends/backend.h
-		core/deps/ggpo/lib/ggpo/backends/p2p.cpp
-		core/deps/ggpo/lib/ggpo/backends/p2p.h
-		core/deps/ggpo/lib/ggpo/backends/spectator.cpp
-		core/deps/ggpo/lib/ggpo/backends/spectator.h
-		core/deps/ggpo/lib/ggpo/backends/synctest.cpp
-		core/deps/ggpo/lib/ggpo/backends/synctest.h
-
-		core/deps/ggpo/lib/ggpo/network/udp_msg.h
-		core/deps/ggpo/lib/ggpo/network/udp_proto.cpp
-		core/deps/ggpo/lib/ggpo/network/udp_proto.h
-		core/deps/ggpo/lib/ggpo/network/udp.cpp
-		core/deps/ggpo/lib/ggpo/network/udp.h)
-
 	if(ANDROID)
 		target_compile_definitions(${PROJECT_NAME} PRIVATE GLES GLES3)
 

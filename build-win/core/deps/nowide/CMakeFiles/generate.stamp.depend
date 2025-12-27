@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/nowide/CMakeLists.txt
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/nowide/cmake/NowideAddWarnings.cmake

@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CA04CF10-F8B3-3633-B553-C1483E4C9D34}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <EnforceProcessCountAcrossBuilds>true</EnforceProcessCountAcrossBuilds>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>zip</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zip.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zip.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zip.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zip.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\CMakeFiles\cad5e889951d29bf474f80102afed3ff\zip_err_str.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating zip_err_str.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DPROJECT_SOURCE_DIR=C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip -DCMAKE_CURRENT_BINARY_DIR=C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/libzip/lib -P C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\cmake\GenerateZipErrorStrings.cmake;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip.h;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zipint.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\zip_err_str.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating zip_err_str.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DPROJECT_SOURCE_DIR=C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip -DCMAKE_CURRENT_BINARY_DIR=C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/libzip/lib -P C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\cmake\GenerateZipErrorStrings.cmake;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip.h;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zipint.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\zip_err_str.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating zip_err_str.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DPROJECT_SOURCE_DIR=C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip -DCMAKE_CURRENT_BINARY_DIR=C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/libzip/lib -P C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\cmake\GenerateZipErrorStrings.cmake;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip.h;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zipint.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\zip_err_str.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating zip_err_str.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DPROJECT_SOURCE_DIR=C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip -DCMAKE_CURRENT_BINARY_DIR=C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/libzip/lib -P C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\cmake\GenerateZipErrorStrings.cmake;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip.h;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zipint.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\zip_err_str.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-win --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/libzip/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-win --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/libzip/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-win --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/libzip/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/core/deps/libzip/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-win --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/libzip/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_add.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_add_dir.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_add_entry.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_algorithm_deflate.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_buffer.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_close.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_delete.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_dir_add.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_dirent.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_discard.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_entry.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_error.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_error_clear.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_error_get.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_error_get_sys_type.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_error_strerror.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_error_to_str.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_extra_field.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_extra_field_api.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_fclose.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_fdopen.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_add.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_error_clear.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_error_get.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_get_comment.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_get_external_attributes.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_get_offset.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_rename.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_replace.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_set_comment.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_set_encryption.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_set_external_attributes.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_set_mtime.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_file_strerror.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_fopen.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_fopen_encrypted.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_fopen_index.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_fopen_index_encrypted.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_fread.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_fseek.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_ftell.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_get_archive_comment.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_get_archive_flag.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_get_encryption_implementation.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_get_file_comment.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_get_name.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_get_num_entries.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_get_num_files.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_hash.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_io_util.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_libzip_version.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_memdup.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_name_locate.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_new.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_open.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_pkware.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_progress.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_rename.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_replace.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_set_archive_comment.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_set_archive_flag.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_set_default_password.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_set_file_comment.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_set_file_compression.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_set_name.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_accept_empty.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_begin_write.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_begin_write_cloning.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_buffer.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_call.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_close.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_commit_write.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_compress.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_crc.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_error.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_file_common.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_file_stdio.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_free.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_function.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_get_file_attributes.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_is_deleted.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_layered.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_open.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_pass_to_lower_layer.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_pkware_decode.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_pkware_encode.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_read.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_remove.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_rollback_write.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_seek.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_seek_write.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_stat.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_supports.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_tell.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_tell_write.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_window.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_write.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_zip.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_zip_new.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_stat.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_stat_index.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_stat_init.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_strerror.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_string.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_unchange.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_unchange_all.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_unchange_archive.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_unchange_data.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_utf-8.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libzip\lib\zip_err_str.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_file_win32.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_file_win32_named.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_file_win32_utf16.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_file_win32_utf8.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_source_file_win32_ansi.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_random_win32.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib\zip_algorithm_zstd.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\ZERO_CHECK.vcxproj">
+      <Project>{4DFE3CFA-AC11-33B0-88EE-1A72666C52E3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\libzstd_static.vcxproj">
+      <Project>{DBD8DFCA-899E-399E-B874-03D30DB64D96}</Project>
+      <Name>libzstd_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libchdr\deps\zlib-1.3.1\zlibstatic.vcxproj">
+      <Project>{73E42886-DF8E-3FC1-B007-84667017C107}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glad\src\gl.c">
+      <Filter>core\deps\glad\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{51DF83F3-8625-3BD0-BA91-03443614E381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps">
+      <UniqueIdentifier>{C962E714-8972-39A0-A17B-27863527D613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\glad">
+      <UniqueIdentifier>{45810E57-014E-3ACC-BAE6-760E451103FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\glad\src">
+      <UniqueIdentifier>{C1BF0863-2342-3C86-B526-721DA802EE65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

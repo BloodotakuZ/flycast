@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\lib.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\alienfnt.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\gunsur2.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\mazan.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\otrigger.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\wldkicks.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\wldkicksj.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\wldkicksu.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\f355.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\f355twin.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\f355twn2.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\dirtypig.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\dirtypig.nvmem2.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\vf4.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\vf4evob.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\vf4tuned.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\magicpop.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\ochaken.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\puyomedal.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\unomedal.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\westdrmg.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\flash\smarinef.nvmem.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\picture\f355_print_template.png.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\picture</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\fonts\printer_ascii8x16.bin.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\fonts\printer_ascii12x24.bin.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\fonts\printer_kanji16x16.bin.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\fonts\printer_kanji24x24.bin.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\__cmrc_flycast-resources\intermediate\fonts\biosfont.bin.zip.cpp">
+      <Filter>build-libretro\__cmrc_flycast-resources\intermediate\fonts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\3bdd2875498b4bedb72444804a68fb34\lib.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\alienfnt.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\gunsur2.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\mazan.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\otrigger.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\wldkicks.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\wldkicksj.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\wldkicksu.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\f355.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\f355twin.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\f355twn2.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\dirtypig.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\dirtypig.nvmem2.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\vf4.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\vf4evob.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\vf4tuned.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\magicpop.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\ochaken.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\puyomedal.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\unomedal.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\westdrmg.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\c5dc88be719a312d7131c1fc2682ccc1\smarinef.nvmem.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\9a09daa81cae4c821e6efd5973feb580\f355_print_template.png.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\0cbfb5904baa262254a974e4bc8387b0\printer_ascii8x16.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\0cbfb5904baa262254a974e4bc8387b0\printer_ascii12x24.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\0cbfb5904baa262254a974e4bc8387b0\printer_kanji16x16.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\0cbfb5904baa262254a974e4bc8387b0\printer_kanji24x24.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\0cbfb5904baa262254a974e4bc8387b0\biosfont.bin.zip.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{736EC974-2FC1-3447-A9C3-96665AB7DCA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-libretro">
+      <UniqueIdentifier>{83080927-C072-3C9F-BD73-D450F4C5F517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-libretro\__cmrc_flycast-resources">
+      <UniqueIdentifier>{8DD45BB8-8B28-39A7-B48C-8F78A64C830D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-libretro\__cmrc_flycast-resources\intermediate">
+      <UniqueIdentifier>{279BE748-B2A4-3339-93E4-B3143D40C92C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-libretro\__cmrc_flycast-resources\intermediate\flash">
+      <UniqueIdentifier>{F2D2ABE5-CCA4-3746-BD0F-1DFC5BF43E47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-libretro\__cmrc_flycast-resources\intermediate\fonts">
+      <UniqueIdentifier>{40804196-D63E-307D-B0FF-8E5F0D6A62F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-libretro\__cmrc_flycast-resources\intermediate\picture">
+      <UniqueIdentifier>{39233958-4398-3702-9FCE-597E1B1219EF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

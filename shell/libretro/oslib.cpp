@@ -19,7 +19,12 @@
 #include "oslib/oslib.h"
 #include "stdclass.h"
 #include "file/file_path.h"
-#ifndef _WIN32
+#ifdef _WIN32
+#include <windows.h>
+#ifndef PATH_MAX
+#define PATH_MAX MAX_PATH
+#endif
+#else
 #include <unistd.h>
 #endif
 

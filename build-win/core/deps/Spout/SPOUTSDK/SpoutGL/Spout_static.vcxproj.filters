@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\Spout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutCopy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutDirectX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutFrameCount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutGLextensions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutReceiver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutSender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutSenderNames.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutSharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\Spout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutCopy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutDirectX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutFrameCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutGLextensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutReceiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutSender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutSenderNames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutSharedMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\SpoutUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\Spout\SPOUTSDK\SpoutGL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F8BE57BD-008F-3211-A4CC-51260F584FBE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF4DDB1B-4BD1-3231-A3FC-83E72A643B86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

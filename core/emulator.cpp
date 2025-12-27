@@ -576,6 +576,7 @@ void Emulator::loadGame(const char *path, LoadProgress *progress)
 
 		config::Settings::instance().reset();
 		config::Settings::instance().load(false);
+		config::GGPOEnable.override(true);
 		dc_reset(true);
 		memset(&settings.network.md5, 0, sizeof(settings.network.md5));
 
@@ -747,6 +748,7 @@ void Emulator::unloadGame()
 		mcfg_DestroyDevices(true);
 		config::Settings::instance().reset();
 		config::Settings::instance().load(false);
+		config::GGPOEnable.override(true);
 		settings.content.path.clear();
 		settings.content.gameId.clear();
 		settings.content.fileName.clear();

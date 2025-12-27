@@ -1,0 +1,290 @@
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\3BDD2875498B4BEDB72444804A68FB34\LIB.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/lib_.cpp C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/lib.cpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\ALIENFNT.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_64a9_flash_alienfnt_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/alienfnt.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/alienfnt.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\GUNSUR2.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_7a82_flash_gunsur2_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/gunsur2.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/gunsur2.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\MAZAN.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_065f_flash_mazan_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/mazan.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/mazan.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\OTRIGGER.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_3470_flash_otrigger_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/otrigger.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/otrigger.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\WLDKICKS.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_39e4_flash_wldkicks_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/wldkicks.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/wldkicks.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\WLDKICKSJ.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_a91f_flash_wldkicksj_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/wldkicksj.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/wldkicksj.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\WLDKICKSU.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_ab52_flash_wldkicksu_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/wldkicksu.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/wldkicksu.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\F355.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_cf18_flash_f355_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/f355.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/f355.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\F355TWIN.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_2585_flash_f355twin_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/f355twin.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/f355twin.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\F355TWN2.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_e20f_flash_f355twn2_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/f355twn2.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/f355twn2.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\DIRTYPIG.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_3451_flash_dirtypig_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/dirtypig.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/dirtypig.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\DIRTYPIG.NVMEM2.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_c994_flash_dirtypig_nvmem2_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/dirtypig.nvmem2.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/dirtypig.nvmem2.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\VF4.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_aa77_flash_vf4_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/vf4.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/vf4.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\VF4EVOB.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_fa91_flash_vf4evob_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/vf4evob.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/vf4evob.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\VF4TUNED.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_bbdd_flash_vf4tuned_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/vf4tuned.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/vf4tuned.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\MAGICPOP.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_7186_flash_magicpop_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/magicpop.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/magicpop.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\OCHAKEN.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_cee4_flash_ochaken_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/ochaken.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/ochaken.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\PUYOMEDAL.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_0b8a_flash_puyomedal_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/puyomedal.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/puyomedal.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\UNOMEDAL.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_c44c_flash_unomedal_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/unomedal.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/unomedal.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\WESTDRMG.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_b7d3_flash_westdrmg_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/westdrmg.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/westdrmg.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\C5DC88BE719A312D7131C1FC2682CCC1\SMARINEF.NVMEM.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_69b4_flash_smarinef_nvmem_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/flash/smarinef.nvmem.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/flash/smarinef.nvmem.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\9A09DAA81CAE4C821E6EFD5973FEB580\F355_PRINT_TEMPLATE.PNG.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_1289_picture_f355_print_template_png -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/resources/picture/f355_print_template.png -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/picture/f355_print_template.png.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\0CBFB5904BAA262254A974E4BC8387B0\PRINTER_ASCII8X16.BIN.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_f4d5_fonts_printer_ascii8x16_bin_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/fonts/printer_ascii8x16.bin.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/fonts/printer_ascii8x16.bin.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\0CBFB5904BAA262254A974E4BC8387B0\PRINTER_ASCII12X24.BIN.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_87b3_fonts_printer_ascii12x24_bin_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/fonts/printer_ascii12x24.bin.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/fonts/printer_ascii12x24.bin.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\0CBFB5904BAA262254A974E4BC8387B0\PRINTER_KANJI16X16.BIN.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_dc64_fonts_printer_kanji16x16_bin_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/fonts/printer_kanji16x16.bin.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/fonts/printer_kanji16x16.bin.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\0CBFB5904BAA262254A974E4BC8387B0\PRINTER_KANJI24X24.BIN.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_2788_fonts_printer_kanji24x24_bin_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/fonts/printer_kanji24x24.bin.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/fonts/printer_kanji24x24.bin.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-LIBRETRO\CMAKEFILES\0CBFB5904BAA262254A974E4BC8387B0\BIOSFONT.BIN.ZIP.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D_CMRC_GENERATE_MODE=TRUE -DNAMESPACE=flycast -DSYMBOL=f_d593_fonts_biosfont_bin_zip -DINPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/fonts/biosfont.bin.zip -DOUTPUT_FILE=C:/Users/Blood/Desktop/flycast/flycast/build-libretro/__cmrc_flycast-resources/intermediate/fonts/biosfont.bin.zip.cpp -P C:/Users/Blood/Desktop/flycast/flycast/shell/cmake/CMakeRC.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

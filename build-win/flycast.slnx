@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="core/deps/SDL/SDL2-static.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="2a6bf7bf-44b8-3f3a-9d49-6ca0604438e7">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="core/deps/SDL/sdl_headers_copy.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/SDL/SDL2main.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="fa11f102-b403-3fc6-a0b3-d6c8d0153bbb">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="core/deps/SDL/sdl_headers_copy.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/Spout/SPOUTSDK/SpoutGL/Spout.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="318882b8-050f-3ec2-b32f-ca08a1f790dc">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/Spout/SPOUTSDK/SpoutDirectX/SpoutDX/SpoutDX.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="45aad965-69a8-3aae-a6c3-67a90d5ec8b4">
+		<BuildDependency Project="core/deps/Spout/SPOUTSDK/SpoutGL/Spout_static.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/Spout/SPOUTSDK/SpoutDirectX/SpoutDX/SpoutDX_static.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b2a044b2-857d-37b8-85eb-8ccadbca4c99">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/Spout/SPOUTSDK/SpoutGL/Spout_static.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b0b42ed1-e8f4-3d29-9421-facb8b7b23fa">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/libchdr/chdr-static.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d3acedcd-9dd8-3fcc-93cf-c705b76c1c52">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/deps/zstd-1.5.6/build/cmake/lib/libzstd_static.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/deps/lzma-24.05/lzma.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/deps/zlib-1.3.1/zlibstatic.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/DreamPicoPort-API/src/dream_pico_port_api.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8049fd13-a893-3b51-aedf-41875cc902be">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="core/deps/libusb-cmake/usb-1.0.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/libelf/elf.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="7962d12a-2ae1-389f-aaad-c981b0d2a191">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="flycast.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b74b5bfe-f153-3228-b595-68f9164252a4" DefaultStartup="true">
+		<BuildDependency Project="core/deps/SDL/SDL2-static.vcxproj"/>
+		<BuildDependency Project="core/deps/SDL/SDL2main.vcxproj"/>
+		<BuildDependency Project="core/deps/glslang/SPIRV/SPIRV.vcxproj"/>
+		<BuildDependency Project="core/deps/Spout/SPOUTSDK/SpoutDirectX/SpoutDX/SpoutDX_static.vcxproj"/>
+		<BuildDependency Project="core/deps/Spout/SPOUTSDK/SpoutGL/Spout_static.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/chdr-static.vcxproj"/>
+		<BuildDependency Project="core/deps/DreamPicoPort-API/src/dream_pico_port_api.vcxproj"/>
+		<BuildDependency Project="core/deps/libelf/elf.vcxproj"/>
+		<BuildDependency Project="flycast-resources.vcxproj"/>
+		<BuildDependency Project="glad.vcxproj"/>
+		<BuildDependency Project="core/deps/glslang/glslang/glslang.vcxproj"/>
+		<BuildDependency Project="core/deps/glslang/glslang/glslang-default-resource-limits.vcxproj"/>
+		<BuildDependency Project="core/deps/libjuice/juice-static.vcxproj"/>
+		<BuildDependency Project="core/deps/miniupnpc/libminiupnpc-static.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/deps/zstd-1.5.6/build/cmake/lib/libzstd_static.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/deps/lzma-24.05/lzma.vcxproj"/>
+		<BuildDependency Project="core/deps/nowide/nowide.vcxproj"/>
+		<BuildDependency Project="core/deps/libusb-cmake/usb-1.0.vcxproj"/>
+		<BuildDependency Project="core/deps/xxHash/cmake_unofficial/xxhash.vcxproj"/>
+		<BuildDependency Project="core/deps/libzip/lib/zip.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/deps/zlib-1.3.1/zlibstatic.vcxproj"/>
+	</Project>
+	<Project Path="flycast-resources.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="cc768c4e-82a7-3864-b8cd-c15f208ea310">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="glad.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f937da88-99ee-3da9-96d6-41aca6c4bdb9">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/libjuice/juice-static.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8081d869-5dfa-3874-9caa-e6e4ef4f9d47">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/miniupnpc/libminiupnpc-static.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e3f7ab45-d1b3-3b67-b497-f11de6eec245">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/libchdr/deps/zstd-1.5.6/build/cmake/lib/libzstd_static.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="dbd8dfca-899e-399e-b874-03d30db64d96">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/libchdr/deps/lzma-24.05/lzma.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8ccdc584-36ef-3f27-9816-0348c4423098">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/nowide/nowide.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="7358af9b-1db2-3310-b71f-52213f57d8b6">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/SDL/sdl_headers_copy.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8551ff2a-5b12-30ff-9ec6-c627d5005eec">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/libusb-cmake/usb-1.0.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="56cd5225-7582-3d90-b51a-55d3f1206f32">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/xxHash/cmake_unofficial/xxhash.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e6748975-8cb8-3c34-b060-a617c31958f6">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/libzip/lib/zip.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="ca04cf10-f8b3-3633-b553-c1483e4c9d34">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/deps/zstd-1.5.6/build/cmake/lib/libzstd_static.vcxproj"/>
+		<BuildDependency Project="core/deps/libchdr/deps/zlib-1.3.1/zlibstatic.vcxproj"/>
+	</Project>
+	<Project Path="core/deps/libchdr/deps/zlib-1.3.1/zlibstatic.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="73e42886-df8e-3fc1-b007-84667017c107">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Folder Name="/CMakePredefinedTargets/">
+		<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="2e6dfdea-a93f-35d1-9c36-c2f5ae3e842a">
+			<BuildDependency Project="core/deps/Spout/SPOUTSDK/SpoutGL/Spout.vcxproj"/>
+			<BuildDependency Project="core/deps/Spout/SPOUTSDK/SpoutDirectX/SpoutDX/SpoutDX.vcxproj"/>
+			<BuildDependency Project="core/deps/Spout/SPOUTSDK/SpoutDirectX/SpoutDX/SpoutDX_static.vcxproj"/>
+			<BuildDependency Project="core/deps/Spout/SPOUTSDK/SpoutGL/Spout_static.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="core/deps/DreamPicoPort-API/src/dream_pico_port_api.vcxproj"/>
+			<BuildDependency Project="flycast.vcxproj"/>
+			<BuildDependency Project="flycast-resources.vcxproj"/>
+			<BuildDependency Project="glad.vcxproj"/>
+			<BuildDependency Project="core/deps/miniupnpc/libminiupnpc-static.vcxproj"/>
+			<BuildDependency Project="core/deps/libusb-cmake/usb-1.0.vcxproj"/>
+			<BuildDependency Project="core/deps/xxHash/cmake_unofficial/xxhash.vcxproj"/>
+		</Project>
+		<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="56b20087-8f5c-344d-94bf-687858c938a9">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="PACKAGE.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="51c67699-df0f-3e88-9a78-913b8f24a756">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4dfe3cfa-ac11-33b0-88ee-1a72666c52e3"/>
+	</Folder>
+	<Folder Name="/glslang/">
+		<Project Path="core/deps/glslang/SPIRV/SPIRV.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="31bccd27-d396-3d12-889c-f6ab37ae7264">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+		<Project Path="core/deps/glslang/glslang/glslang.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d974ea1f-8680-35b4-9a8a-ad3bee2d8253">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+		<Project Path="core/deps/glslang/glslang/glslang-default-resource-limits.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f020aea5-af23-34c0-a2aa-510a92b73c4b">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+	</Folder>
+</Solution>

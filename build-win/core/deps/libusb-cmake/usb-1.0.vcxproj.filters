@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\descriptor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\hotplug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\strerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\events_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\threads_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_usbdk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_winusb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\gen_include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\libusb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\libusbi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\version_nano.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\events_windows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\threads_windows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_usbdk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_winusb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\libusb-1.0.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\libusb-1.0.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F8BE57BD-008F-3211-A4CC-51260F584FBE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF4DDB1B-4BD1-3231-A3FC-83E72A643B86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

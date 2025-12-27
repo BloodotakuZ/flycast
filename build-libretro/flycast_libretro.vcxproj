@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{44AF6343-D002-365C-8D13-63520D4E3FFE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>flycast_libretro</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flycast_libretro.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flycast_libretro</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flycast_libretro.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flycast_libretro</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">flycast_libretro.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">flycast_libretro</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">flycast_libretro.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">flycast_libretro</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR="Debug";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR=\"Debug\";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR="Debug";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GR /GS-</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>core\deps\xxHash\cmake_unofficial\Debug\xxhash.lib;core\deps\glslang\glslang\Debug\glslang-default-resource-limitsd.lib;core\deps\glslang\SPIRV\Debug\SPIRVd.lib;core\deps\libchdr\deps\zlib-1.3.1\Debug\zlibstaticd.lib;core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\Debug\zstd_static.lib;core\deps\libchdr\Debug\chdr-static.lib;core\deps\nowide\Debug\nowide.lib;core\deps\miniupnpc\Debug\libminiupnpc.lib;core\deps\libzip\lib\Debug\zip.lib;core\deps\libelf\Debug\elf.lib;Debug\flycast-resources.lib;mswsock.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;core\deps\glslang\glslang\Debug\glslangd.lib;core\deps\libchdr\deps\lzma-24.05\Debug\lzma.lib;ws2_32.lib;iphlpapi.lib;core\deps\libchdr\deps\zlib-1.3.1\Debug\zlibstaticd.lib;core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\Debug\zstd_static.lib;advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /DEFAULTLIB:winmm -Wl,--no-undefined</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/Blood/Desktop/flycast/flycast/build-libretro/Debug/flycast_libretro.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/Blood/Desktop/flycast/flycast/build-libretro/Debug/flycast_libretro.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR="Release";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR=\"Release\";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR="Release";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GR /GS-</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>core\deps\xxHash\cmake_unofficial\Release\xxhash.lib;core\deps\glslang\glslang\Release\glslang-default-resource-limits.lib;core\deps\glslang\SPIRV\Release\SPIRV.lib;core\deps\libchdr\deps\zlib-1.3.1\Release\zlibstatic.lib;core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\Release\zstd_static.lib;core\deps\libchdr\Release\chdr-static.lib;core\deps\nowide\Release\nowide.lib;core\deps\miniupnpc\Release\libminiupnpc.lib;core\deps\libzip\lib\Release\zip.lib;core\deps\libelf\Release\elf.lib;Release\flycast-resources.lib;mswsock.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;core\deps\glslang\glslang\Release\glslang.lib;core\deps\libchdr\deps\lzma-24.05\Release\lzma.lib;ws2_32.lib;iphlpapi.lib;core\deps\libchdr\deps\zlib-1.3.1\Release\zlibstatic.lib;core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\Release\zstd_static.lib;advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /DEFAULTLIB:winmm -Wl,--no-undefined -s</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/Blood/Desktop/flycast/flycast/build-libretro/Release/flycast_libretro.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/Blood/Desktop/flycast/flycast/build-libretro/Release/flycast_libretro.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR="MinSizeRel";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR=\"MinSizeRel\";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR="MinSizeRel";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GR /GS-</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>core\deps\xxHash\cmake_unofficial\MinSizeRel\xxhash.lib;core\deps\glslang\glslang\MinSizeRel\glslang-default-resource-limits.lib;core\deps\glslang\SPIRV\MinSizeRel\SPIRV.lib;core\deps\libchdr\deps\zlib-1.3.1\MinSizeRel\zlibstatic.lib;core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\MinSizeRel\zstd_static.lib;core\deps\libchdr\MinSizeRel\chdr-static.lib;core\deps\nowide\MinSizeRel\nowide.lib;core\deps\miniupnpc\MinSizeRel\libminiupnpc.lib;core\deps\libzip\lib\MinSizeRel\zip.lib;core\deps\libelf\MinSizeRel\elf.lib;MinSizeRel\flycast-resources.lib;mswsock.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;core\deps\glslang\glslang\MinSizeRel\glslang.lib;core\deps\libchdr\deps\lzma-24.05\MinSizeRel\lzma.lib;ws2_32.lib;iphlpapi.lib;core\deps\libchdr\deps\zlib-1.3.1\MinSizeRel\zlibstatic.lib;core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\MinSizeRel\zstd_static.lib;advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /DEFAULTLIB:winmm -Wl,--no-undefined</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/Blood/Desktop/flycast/flycast/build-libretro/MinSizeRel/flycast_libretro.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/Blood/Desktop/flycast/flycast/build-libretro/MinSizeRel/flycast_libretro.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR="RelWithDebInfo";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;LIBRETRO;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNING;NOMINMAX;_USE_MATH_DEFINES;_7ZIP_ST;VK_ENABLE_BETA_EXTENSIONS;VK_NO_PROTOTYPES;VK_USE_PLATFORM_WIN32_KHR;USE_VULKAN;HAVE_VULKAN;HAVE_D3D11;NOWIDE_NO_LIB;MINIUPNP_STATICLIB;CMAKE_INTDIR="RelWithDebInfo";flycast_libretro_EXPORTS</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GR /GS-</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core;C:\Users\Blood\Desktop\flycast\flycast\core\deps;C:\Users\Blood\Desktop\flycast\flycast\core\deps\stb;C:\Users\Blood\Desktop\flycast\flycast\core\deps\json;C:\Users\Blood\Desktop\flycast\flycast\core\deps\asio\asio\include;C:\Users\Blood\Desktop\flycast\flycast\shell\libretro;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\dirent;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xxHash\cmake_unofficial\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glm\glm\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zlib-1.3.1;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\..\..\lib;C:\Users\Blood\Desktop\flycast\flycast\core\deps\nowide\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\miniupnpc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libzip\lib;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip;C:\Users\Blood\Desktop\flycast\flycast\core\deps\libelf\include;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\_cmrc\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\Vulkan-Headers\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\VulkanMemoryAllocator\include;C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>core\deps\xxHash\cmake_unofficial\RelWithDebInfo\xxhash.lib;core\deps\glslang\glslang\RelWithDebInfo\glslang-default-resource-limits.lib;core\deps\glslang\SPIRV\RelWithDebInfo\SPIRV.lib;core\deps\libchdr\deps\zlib-1.3.1\RelWithDebInfo\zlibstatic.lib;core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\RelWithDebInfo\zstd_static.lib;core\deps\libchdr\RelWithDebInfo\chdr-static.lib;core\deps\nowide\RelWithDebInfo\nowide.lib;core\deps\miniupnpc\RelWithDebInfo\libminiupnpc.lib;core\deps\libzip\lib\RelWithDebInfo\zip.lib;core\deps\libelf\RelWithDebInfo\elf.lib;RelWithDebInfo\flycast-resources.lib;mswsock.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;core\deps\glslang\glslang\RelWithDebInfo\glslang.lib;core\deps\libchdr\deps\lzma-24.05\RelWithDebInfo\lzma.lib;ws2_32.lib;iphlpapi.lib;core\deps\libchdr\deps\zlib-1.3.1\RelWithDebInfo\zlibstatic.lib;core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\RelWithDebInfo\zstd_static.lib;advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /DEFAULTLIB:winmm -Wl,--no-undefined</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/Blood/Desktop/flycast/flycast/build-libretro/RelWithDebInfo/flycast_libretro.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/Blood/Desktop/flycast/flycast/build-libretro/RelWithDebInfo/flycast_libretro.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeCCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeCXXCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeRCCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeSystem.cmake;C:\Users\Blood\Desktop\flycast\flycast\cmake\resources.cmake;C:\Users\Blood\Desktop\flycast\flycast\core\version.h.in;C:\Users\Blood\Desktop\flycast\flycast\shell\cmake\CMakeRC.cmake;C:\Users\Blood\Desktop\flycast\flycast\shell\cmake\DetectArchitecture.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeCCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeCXXCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeRCCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeSystem.cmake;C:\Users\Blood\Desktop\flycast\flycast\cmake\resources.cmake;C:\Users\Blood\Desktop\flycast\flycast\core\version.h.in;C:\Users\Blood\Desktop\flycast\flycast\shell\cmake\CMakeRC.cmake;C:\Users\Blood\Desktop\flycast\flycast\shell\cmake\DetectArchitecture.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeCCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeCXXCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeRCCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeSystem.cmake;C:\Users\Blood\Desktop\flycast\flycast\cmake\resources.cmake;C:\Users\Blood\Desktop\flycast\flycast\core\version.h.in;C:\Users\Blood\Desktop\flycast\flycast\shell\cmake\CMakeRC.cmake;C:\Users\Blood\Desktop\flycast\flycast\shell\cmake\DetectArchitecture.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeCCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeCXXCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeRCCompiler.cmake;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\4.2.0\CMakeSystem.cmake;C:\Users\Blood\Desktop\flycast\flycast\cmake\resources.cmake;C:\Users\Blood\Desktop\flycast\flycast\core\version.h.in;C:\Users\Blood\Desktop\flycast\flycast\shell\cmake\CMakeRC.cmake;C:\Users\Blood\Desktop\flycast\flycast\shell\cmake\DetectArchitecture.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\emulator.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\chdpsr\cdipsr.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\chdpsr\cdipsr.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_arm9.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_atsamd21j18.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_avr.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_cortex_m.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_dos.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_esp8266.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_generic_gcc.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_linux.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_mbed.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_msp430.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_msvc.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_none.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_pic24.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_pic32.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_posix.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\heap.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_addressing.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_config.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_constants.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_defines.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_defines_msvc.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_device.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_eth.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_frame.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_md5.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_module_eth.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_protocol.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_queue.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_socket.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_socket_multicast.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_stack.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_tree.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_arp.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dev_ppp.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dhcp_common.c" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dhcp_common.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dhcp_server.c" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dhcp_server.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dns_client.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dns_common.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_ethernet.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_fragments.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_icmp4.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_ipv4.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_socket_tcp.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_socket_udp.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_strings.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_tcp.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_udp.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_device.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_frame.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_md5.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_protocol.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_socket.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_socket_multicast.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_stack.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_tree.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zArcIn.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zBuf.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zCrc.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zCrcOpt.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zDec.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zFile.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zStream.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Alloc.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Bcj2.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Bra86.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Bra.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\BraIA64.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\CpuArch.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Delta.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\LzFind.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Lzma2Dec.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Lzma86Dec.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Lzma86Enc.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\LzmaDec.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\LzmaEnc.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\LzmaLib.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Sort.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbrz\xbrz.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\md5\md5.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\memmap\memalign.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\file\file_path.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\vfs\vfs_implementation.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\encodings\encoding_utf.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\compat\compat_strl.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\compat\fopen_utf8.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\compat\compat_strcasestr.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\file\retro_dirent.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\string\stdstring.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\msvc_compat.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\audiostream.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\keyboard_map.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\libretro_core_option_defines.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\libretro_core_options_intl.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\libretro_core_options.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\libretro.cpp">
+      <ObjectFileName>$(IntDir)/shell/libretro/libretro.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\LogManager.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\LogManager.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\option.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\oslib.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\vmu_xhair.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\7zArchive.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\7zArchive.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\archive.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\archive.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\rzip.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\rzip.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\ZipArchive.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\ZipArchive.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\cfg\option.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\hwreg.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica_if.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica_if.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica_mem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica_mem.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_arm32.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_arm64.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_interp.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_x64.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_x86.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\sgc_if.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\sgc_if.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm_mem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm_mem.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec_arm32.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec_arm64.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec_x64.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm-new.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\bba\bba.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\bba\bba.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\bba\rtl8139c.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\bba\rtl8139c.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\at93cxx.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\at93cxx.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\flashrom.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\flashrom.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\nvmem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\nvmem.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\x76f100.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\x76f100.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\gdrom\gdrom_if.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\gdrom\gdrom_response.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\gdrom\gdromv3.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\gdrom\gdromv3.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\holly_intc.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\holly_intc.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\sb.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\sb.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\sb_mem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\sb_mem.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_cfg.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_cfg.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_devs.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_devs.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_helper.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_helper.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_if.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_if.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_jvs.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\mem\addrspace.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\mem\addrspace.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\mem\mem_watch.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\mem\mem_watch.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\modem\modem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\modem\modem.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\modem\modem_regs.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\atomiswave.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\atomiswave.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\awave_regs.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\awcartridge.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\awcartridge.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\decrypt.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\decrypt.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\gdcartridge.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\gdcartridge.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\m1cartridge.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\m1cartridge.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\m4cartridge.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\m4cartridge.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\midiffb.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\midiffb.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\multiboard.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\multiboard.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_cart.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_cart.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_flashrom.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_flashrom.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_m3comm.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_m3comm.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_regs.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_roms.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_roms.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_roms_input.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\netdimm.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\netdimm.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\card_reader.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\card_reader.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\touchscreen.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\touchscreen.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\printer.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\printer.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\systemsp.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\systemsp.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\hopper.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\hopper.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\elan.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\elan.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\elan_struct.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_mem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_mem.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_regs.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_regs.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_sb_regs.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_sb_regs.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\Renderer_if.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\Renderer_if.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\spg.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\spg.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_const_df.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_ctx.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_ctx.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_structs.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_util.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_vtx.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\blockmanager.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\blockmanager.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\decoder.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\decoder.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\decoder_opcodes.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\driver.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\ngen.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\shil_canonical.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\shil.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\shil.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\ssa.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\ssa.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\ssa_regalloc.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\fsca-table.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\interpr\sh4_fpu.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\interpr\sh4_interpreter.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\interpr\sh4_opcodes.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\interpr\sh4_opcodes.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\bsc.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\ccn.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\ccn.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\cpg.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\dmac.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\dmac.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\fastmmu.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\intc.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\mmu.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\mmu.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\modules.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\rtc.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\serial.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\tmu.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\ubc.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\wince.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_cache.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_cycles.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_cycles.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_core.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_core_regs.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_if.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_interpreter.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_interrupts.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_interrupts.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_mem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_mem.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_mmr.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_mmr.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_opcode_list.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_opcode_list.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_rom.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_rom.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_sched.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_sched.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\storeq.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\cdi.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\cdio.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\chd.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\common.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\common.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\cue.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\gdi.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\ImgReader.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\iso9660.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\isofs.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\isofs.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\log\BitSet.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\log\Log.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\log\StringUtil.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\alienfnt_modem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\alienfnt_modem.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\dns.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ggpo.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ggpo.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\miniupnp.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\miniupnp.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\naomi_network.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\naomi_network.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\net_handshake.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\net_handshake.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\net_platform.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\output.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\output.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\picoppp.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\picoppp.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\netservice.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\netservice.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\dcnet.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\dcnet.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ice.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ice.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ifaddrs.c" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\directory.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\directory.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\host_context.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\oslib.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\resources.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\resources.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\storage.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\storage.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\unwind_info.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\virtmem.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\audio\audiostream.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\descrambl.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\descrambl.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\gdrom_hle.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\gdrom_hle.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\reios.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\reios.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\reios_elf.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\reios_elf.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\achievements\achievements.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\achievements\achievements.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\lua\lua.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\lua\lua.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\wsi\context.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\wsi\libretro.cpp">
+      <ObjectFileName>$(IntDir)/core/wsi/libretro.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\wsi\libretro.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\wsi\switcher.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\windows\comptr.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\windows\fault_handler.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\windows\unwind_info.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\windows\win_vmem.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\build.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\cheats.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\cheats.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\emulator.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\nullDC.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\serialize.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\serialize.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\stdclass.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\stdclass.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\types.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\debug\gdb_server.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\CustomTexture.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\CustomTexture.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\osd.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\osd.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\sorter.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\sorter.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\tileclip.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\TexCache.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\TexCache.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\texconv.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\texconv.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\norend\norend.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_buffer.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_drawer.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_drawer.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_pipeline.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_pipeline.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_renderer.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_renderpass.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_renderpass.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_shaders.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_shaders.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\adreno.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\buffer.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\buffer.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\commandpool.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\commandpool.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\compiler.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\compiler.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\drawer.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\drawer.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\pipeline.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\pipeline.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\quad.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\quad.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\shaders.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\shaders.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\texture.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\texture.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\utils.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vmallocator.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vmallocator.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\overlay.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\overlay.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vulkan_context.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vulkan.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vulkan_renderer.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vk_context_lr.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vk_context_lr.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_driver.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_overlay.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_overlay.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_renderer.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_renderer.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_renderstate.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_renderstate.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_shaders.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_shaders.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_texture.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_texture.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11context.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11context.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11context_lr.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11context_lr.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_naomi2.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_naomi2.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\oit\dx11_oitbuffers.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\oit\dx11_oitrenderer.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\oit\dx11_oitshaders.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\oit\dx11_oitshaders.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rec-x64\xbyak_base.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rec-x64\rec_x64.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rec-x64\x64_regalloc.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\bitvector.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\bitvector.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\game_input.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\game_input.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\input_queue.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\input_queue.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\main.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\platform_linux.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\platform_linux.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\platform_windows.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\platform_windows.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\poll.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\ggpo_poll.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\ring_buffer.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\static_buffer.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\sync.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\sync.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\timesync.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\timesync.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\ggpo_types.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\backend.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\p2p.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\p2p.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\spectator.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\spectator.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\synctest.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\synctest.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp_msg.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp_proto.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp_proto.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\ZERO_CHECK.vcxproj">
+      <Project>{9BD86B6C-A530-3E01-AA9C-DABD4D619A3E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\SPIRV\SPIRV.vcxproj">
+      <Project>{62189563-9E36-38DD-B535-5C2C8EAB1904}</Project>
+      <Name>SPIRV</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\chdr-static.vcxproj">
+      <Project>{0B1E255E-9749-3ABE-A869-956B2425CE7B}</Project>
+      <Name>chdr-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libelf\elf.vcxproj">
+      <Project>{F1C52467-4938-3636-B773-47C1CD3008D6}</Project>
+      <Name>elf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\flycast-resources.vcxproj">
+      <Project>{1B657662-36DA-3E78-96D2-84ECB87DF52C}</Project>
+      <Name>flycast-resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\glslang.vcxproj">
+      <Project>{7A0CB592-6ECD-347B-8CFE-122224EC3CC0}</Project>
+      <Name>glslang</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\glslang-default-resource-limits.vcxproj">
+      <Project>{31FC2967-AF49-3D87-9400-372474E6EEDF}</Project>
+      <Name>glslang-default-resource-limits</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\miniupnpc\libminiupnpc-static.vcxproj">
+      <Project>{E7A41AAE-8C4B-35AF-A584-2F47E16A09C5}</Project>
+      <Name>libminiupnpc-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zstd-1.5.6\build\cmake\lib\libzstd_static.vcxproj">
+      <Project>{B3934C24-6B2C-328F-87AD-9A92F63130DE}</Project>
+      <Name>libzstd_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\lzma-24.05\lzma.vcxproj">
+      <Project>{A2F0CCDC-61BC-391C-9307-423F4D9858FC}</Project>
+      <Name>lzma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\nowide\nowide.vcxproj">
+      <Project>{4FC09B23-76E1-3103-A608-FE63048AA4D1}</Project>
+      <Name>nowide</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\xxHash\cmake_unofficial\xxhash.vcxproj">
+      <Project>{51AAAB57-2AD5-309A-AED0-C466FE615EE2}</Project>
+      <Name>xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libzip\lib\zip.vcxproj">
+      <Project>{A7558B7C-958D-3341-A7DF-A61281D8D547}</Project>
+      <Name>zip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\libchdr\deps\zlib-1.3.1\zlibstatic.vcxproj">
+      <Project>{1AED674A-040C-3084-BFFD-11C9A02F4891}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

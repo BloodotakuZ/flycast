@@ -27,6 +27,7 @@
 #include <mutex>
 #include <utility>
 #include <vector>
+#include <string>
 #include <time.h>
 
 void loadGameSpecificSettings();
@@ -36,9 +37,14 @@ int flycast_init(int argc, char* argv[]);
 void flycast_term();
 void dc_exit();
 void dc_savestate(int index = 0, const u8 *pngData = nullptr, u32 pngSize = 0);
+void dc_savestate(const std::string& filename);
+void dc_savestate(int index, const std::string& filename);
 void dc_loadstate(int index = 0);
+void dc_loadstate(const std::string& filename);
+void dc_loadstate(int index, const std::string& filename);
 time_t dc_getStateCreationDate(int index);
 void dc_getStateScreenshot(int index, std::vector<u8>& pngData);
+std::string get_net_savestate_file_path(bool writable);
 
 enum class Event {
 	Start,

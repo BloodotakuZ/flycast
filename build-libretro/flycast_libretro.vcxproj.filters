@@ -1,0 +1,1635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\emulator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\chdpsr\cdipsr.cpp">
+      <Filter>core\deps\chdpsr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_arp.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dev_ppp.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dhcp_common.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dhcp_server.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dns_client.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dns_common.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_ethernet.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_fragments.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_icmp4.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_ipv4.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_socket_tcp.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_socket_udp.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_strings.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_tcp.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_udp.c">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_device.c">
+      <Filter>core\deps\picotcp\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_frame.c">
+      <Filter>core\deps\picotcp\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_md5.c">
+      <Filter>core\deps\picotcp\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_protocol.c">
+      <Filter>core\deps\picotcp\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_socket.c">
+      <Filter>core\deps\picotcp\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_socket_multicast.c">
+      <Filter>core\deps\picotcp\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_stack.c">
+      <Filter>core\deps\picotcp\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\stack\pico_tree.c">
+      <Filter>core\deps\picotcp\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zArcIn.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zBuf.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zCrc.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zCrcOpt.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zDec.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zFile.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\7zStream.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Alloc.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Bcj2.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Bra86.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Bra.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\BraIA64.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\CpuArch.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Delta.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\LzFind.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Lzma2Dec.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Lzma86Dec.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Lzma86Enc.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\LzmaDec.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\LzmaEnc.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\LzmaLib.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\lzma\Sort.c">
+      <Filter>core\deps\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\xbrz\xbrz.cpp">
+      <Filter>core\deps\xbrz</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\md5\md5.cpp">
+      <Filter>core\deps\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\memmap\memalign.c">
+      <Filter>core\deps\libretro-common\memmap</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\file\file_path.c">
+      <Filter>core\deps\libretro-common\file</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\vfs\vfs_implementation.c">
+      <Filter>core\deps\libretro-common\vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\encodings\encoding_utf.c">
+      <Filter>core\deps\libretro-common\encodings</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\compat\compat_strl.c">
+      <Filter>core\deps\libretro-common\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\compat\fopen_utf8.c">
+      <Filter>core\deps\libretro-common\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\compat\compat_strcasestr.c">
+      <Filter>core\deps\libretro-common\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\file\retro_dirent.c">
+      <Filter>core\deps\libretro-common\file</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\libretro-common\string\stdstring.c">
+      <Filter>core\deps\libretro-common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\msvc_compat.c">
+      <Filter>shell\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\audiostream.cpp">
+      <Filter>shell\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\libretro.cpp">
+      <Filter>shell\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\LogManager.cpp">
+      <Filter>shell\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\option.cpp">
+      <Filter>shell\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\oslib.cpp">
+      <Filter>shell\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\vmu_xhair.cpp">
+      <Filter>shell\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\7zArchive.cpp">
+      <Filter>core\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\archive.cpp">
+      <Filter>core\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\rzip.cpp">
+      <Filter>core\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\ZipArchive.cpp">
+      <Filter>core\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica_if.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica_mem.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_arm32.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_arm64.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_interp.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_x64.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp_x86.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\sgc_if.cpp">
+      <Filter>core\hw\aica</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7.cpp">
+      <Filter>core\hw\arm7</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm_mem.cpp">
+      <Filter>core\hw\arm7</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec_arm32.cpp">
+      <Filter>core\hw\arm7</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec_arm64.cpp">
+      <Filter>core\hw\arm7</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec_x64.cpp">
+      <Filter>core\hw\arm7</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec.cpp">
+      <Filter>core\hw\arm7</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\bba\bba.cpp">
+      <Filter>core\hw\bba</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\bba\rtl8139c.cpp">
+      <Filter>core\hw\bba</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\at93cxx.cpp">
+      <Filter>core\hw\flashrom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\flashrom.cpp">
+      <Filter>core\hw\flashrom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\nvmem.cpp">
+      <Filter>core\hw\flashrom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\x76f100.cpp">
+      <Filter>core\hw\flashrom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\gdrom\gdrom_response.cpp">
+      <Filter>core\hw\gdrom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\gdrom\gdromv3.cpp">
+      <Filter>core\hw\gdrom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\holly_intc.cpp">
+      <Filter>core\hw\holly</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\sb.cpp">
+      <Filter>core\hw\holly</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\sb_mem.cpp">
+      <Filter>core\hw\holly</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_cfg.cpp">
+      <Filter>core\hw\maple</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_devs.cpp">
+      <Filter>core\hw\maple</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_helper.cpp">
+      <Filter>core\hw\maple</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_if.cpp">
+      <Filter>core\hw\maple</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_jvs.cpp">
+      <Filter>core\hw\maple</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\mem\addrspace.cpp">
+      <Filter>core\hw\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\mem\mem_watch.cpp">
+      <Filter>core\hw\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\modem\modem.cpp">
+      <Filter>core\hw\modem</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\atomiswave.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\awcartridge.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\decrypt.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\gdcartridge.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\m1cartridge.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\m4cartridge.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\midiffb.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\multiboard.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_cart.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_flashrom.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_m3comm.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_roms.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\netdimm.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\card_reader.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\touchscreen.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\printer.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\systemsp.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\hopper.cpp">
+      <Filter>core\hw\naomi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\elan.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_mem.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_regs.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_sb_regs.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\Renderer_if.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\spg.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_ctx.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_util.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_vtx.cpp">
+      <Filter>core\hw\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\blockmanager.cpp">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\decoder.cpp">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\driver.cpp">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\shil.cpp">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\ssa.cpp">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\interpr\sh4_fpu.cpp">
+      <Filter>core\hw\sh4\interpr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\interpr\sh4_interpreter.cpp">
+      <Filter>core\hw\sh4\interpr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\interpr\sh4_opcodes.cpp">
+      <Filter>core\hw\sh4\interpr</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\bsc.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\ccn.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\cpg.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\dmac.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\fastmmu.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\intc.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\mmu.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\rtc.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\serial.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\tmu.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\ubc.cpp">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_cycles.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_core_regs.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_interrupts.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_mem.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_mmr.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_opcode_list.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_rom.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_sched.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\storeq.cpp">
+      <Filter>core\hw\sh4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\cdi.cpp">
+      <Filter>core\imgread</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\cdio.cpp">
+      <Filter>core\imgread</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\chd.cpp">
+      <Filter>core\imgread</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\common.cpp">
+      <Filter>core\imgread</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\cue.cpp">
+      <Filter>core\imgread</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\gdi.cpp">
+      <Filter>core\imgread</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\ImgReader.cpp">
+      <Filter>core\imgread</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\isofs.cpp">
+      <Filter>core\imgread</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\alienfnt_modem.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\dns.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ggpo.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\miniupnp.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\naomi_network.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\net_handshake.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\output.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\picoppp.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\netservice.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\dcnet.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ice.cpp">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ifaddrs.c">
+      <Filter>core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\directory.cpp">
+      <Filter>core\oslib</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\resources.cpp">
+      <Filter>core\oslib</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\storage.cpp">
+      <Filter>core\oslib</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\descrambl.cpp">
+      <Filter>core\reios</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\gdrom_hle.cpp">
+      <Filter>core\reios</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\reios.cpp">
+      <Filter>core\reios</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\reios_elf.cpp">
+      <Filter>core\reios</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\achievements\achievements.cpp">
+      <Filter>core\achievements</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\lua\lua.cpp">
+      <Filter>core\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\wsi\libretro.cpp">
+      <Filter>core\wsi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\wsi\switcher.cpp">
+      <Filter>core\wsi</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\windows\fault_handler.cpp">
+      <Filter>core\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\windows\unwind_info.cpp">
+      <Filter>core\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\windows\win_vmem.cpp">
+      <Filter>core\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\cheats.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\nullDC.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\serialize.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\stdclass.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\CustomTexture.cpp">
+      <Filter>core\rend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\osd.cpp">
+      <Filter>core\rend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\sorter.cpp">
+      <Filter>core\rend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\TexCache.cpp">
+      <Filter>core\rend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\texconv.cpp">
+      <Filter>core\rend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\norend\norend.cpp">
+      <Filter>core\rend\norend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_drawer.cpp">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_pipeline.cpp">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_renderer.cpp">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_renderpass.cpp">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_shaders.cpp">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\adreno.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\buffer.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\commandpool.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\compiler.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\drawer.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\pipeline.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\quad.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\shaders.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\texture.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vmallocator.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\overlay.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vulkan_renderer.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vk_context_lr.cpp">
+      <Filter>core\rend\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_overlay.cpp">
+      <Filter>core\rend\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_renderer.cpp">
+      <Filter>core\rend\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_renderstate.cpp">
+      <Filter>core\rend\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_shaders.cpp">
+      <Filter>core\rend\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_texture.cpp">
+      <Filter>core\rend\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11context.cpp">
+      <Filter>core\rend\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11context_lr.cpp">
+      <Filter>core\rend\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_naomi2.cpp">
+      <Filter>core\rend\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\oit\dx11_oitrenderer.cpp">
+      <Filter>core\rend\dx11\oit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\oit\dx11_oitshaders.cpp">
+      <Filter>core\rend\dx11\oit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\rec-x64\rec_x64.cpp">
+      <Filter>core\rec-x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\bitvector.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\game_input.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\input_queue.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\main.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\platform_linux.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\platform_windows.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\poll.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\sync.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\timesync.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\p2p.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\spectator.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\synctest.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp_proto.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo\network</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp.cpp">
+      <Filter>core\deps\ggpo\lib\ggpo\network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\chdpsr\cdipsr.h">
+      <Filter>core\deps\chdpsr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_arm9.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_atsamd21j18.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_avr.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_cortex_m.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_dos.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_esp8266.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_generic_gcc.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_linux.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_mbed.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_msp430.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_msvc.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_none.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_pic24.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_pic32.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\arch\pico_posix.h">
+      <Filter>core\deps\picotcp\include\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\heap.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_addressing.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_config.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_constants.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_defines.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_defines_msvc.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_device.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_eth.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_frame.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_md5.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_module_eth.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_protocol.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_queue.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_socket.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_socket_multicast.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_stack.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\include\pico_tree.h">
+      <Filter>core\deps\picotcp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dhcp_common.h">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\picotcp\modules\pico_dhcp_server.h">
+      <Filter>core\deps\picotcp\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\keyboard_map.h">
+      <Filter>shell\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\libretro_core_option_defines.h">
+      <Filter>shell\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\libretro_core_options_intl.h">
+      <Filter>shell\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\libretro_core_options.h">
+      <Filter>shell\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\shell\libretro\LogManager.h">
+      <Filter>shell\libretro</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\7zArchive.h">
+      <Filter>core\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\archive.h">
+      <Filter>core\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\rzip.h">
+      <Filter>core\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\archive\ZipArchive.h">
+      <Filter>core\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\cfg\option.h">
+      <Filter>core\cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\hwreg.h">
+      <Filter>core\hw</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica.h">
+      <Filter>core\hw\aica</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica_if.h">
+      <Filter>core\hw\aica</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\aica_mem.h">
+      <Filter>core\hw\aica</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\dsp.h">
+      <Filter>core\hw\aica</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\aica\sgc_if.h">
+      <Filter>core\hw\aica</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7.h">
+      <Filter>core\hw\arm7</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm_mem.h">
+      <Filter>core\hw\arm7</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm7_rec.h">
+      <Filter>core\hw\arm7</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\arm7\arm-new.h">
+      <Filter>core\hw\arm7</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\bba\bba.h">
+      <Filter>core\hw\bba</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\bba\rtl8139c.h">
+      <Filter>core\hw\bba</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\at93cxx.h">
+      <Filter>core\hw\flashrom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\flashrom.h">
+      <Filter>core\hw\flashrom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\nvmem.h">
+      <Filter>core\hw\flashrom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\flashrom\x76f100.h">
+      <Filter>core\hw\flashrom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\gdrom\gdrom_if.h">
+      <Filter>core\hw\gdrom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\gdrom\gdromv3.h">
+      <Filter>core\hw\gdrom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\holly_intc.h">
+      <Filter>core\hw\holly</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\sb.h">
+      <Filter>core\hw\holly</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\holly\sb_mem.h">
+      <Filter>core\hw\holly</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_cfg.h">
+      <Filter>core\hw\maple</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_devs.h">
+      <Filter>core\hw\maple</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_helper.h">
+      <Filter>core\hw\maple</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\maple\maple_if.h">
+      <Filter>core\hw\maple</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\mem\addrspace.h">
+      <Filter>core\hw\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\mem\mem_watch.h">
+      <Filter>core\hw\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\modem\modem.h">
+      <Filter>core\hw\modem</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\modem\modem_regs.h">
+      <Filter>core\hw\modem</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\atomiswave.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\awave_regs.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\awcartridge.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\decrypt.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\gdcartridge.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\m1cartridge.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\m4cartridge.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\midiffb.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\multiboard.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_cart.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_flashrom.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_m3comm.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_regs.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_roms.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\naomi_roms_input.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\netdimm.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\card_reader.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\touchscreen.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\printer.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\systemsp.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\naomi\hopper.h">
+      <Filter>core\hw\naomi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\elan.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\elan_struct.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_mem.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_regs.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\pvr_sb_regs.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\Renderer_if.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\spg.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_const_df.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_ctx.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\pvr\ta_structs.h">
+      <Filter>core\hw\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\blockmanager.h">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\decoder.h">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\decoder_opcodes.h">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\ngen.h">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\shil_canonical.h">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\shil.h">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\ssa.h">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\dyna\ssa_regalloc.h">
+      <Filter>core\hw\sh4\dyna</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\fsca-table.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\interpr\sh4_opcodes.h">
+      <Filter>core\hw\sh4\interpr</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\ccn.h">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\dmac.h">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\mmu.h">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\modules.h">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\modules\wince.h">
+      <Filter>core\hw\sh4\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_cache.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_cycles.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_core.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_if.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_interpreter.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_interrupts.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_mem.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_mmr.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_opcode_list.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_rom.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\hw\sh4\sh4_sched.h">
+      <Filter>core\hw\sh4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\common.h">
+      <Filter>core\imgread</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\iso9660.h">
+      <Filter>core\imgread</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\imgread\isofs.h">
+      <Filter>core\imgread</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\log\BitSet.h">
+      <Filter>core\log</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\log\Log.h">
+      <Filter>core\log</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\log\StringUtil.h">
+      <Filter>core\log</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\alienfnt_modem.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ggpo.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\miniupnp.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\naomi_network.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\net_handshake.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\net_platform.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\output.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\picoppp.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\netservice.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\dcnet.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\network\ice.h">
+      <Filter>core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\directory.h">
+      <Filter>core\oslib</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\host_context.h">
+      <Filter>core\oslib</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\oslib.h">
+      <Filter>core\oslib</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\resources.h">
+      <Filter>core\oslib</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\storage.h">
+      <Filter>core\oslib</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\unwind_info.h">
+      <Filter>core\oslib</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\oslib\virtmem.h">
+      <Filter>core\oslib</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\audio\audiostream.h">
+      <Filter>core\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\descrambl.h">
+      <Filter>core\reios</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\gdrom_hle.h">
+      <Filter>core\reios</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\reios.h">
+      <Filter>core\reios</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\reios\reios_elf.h">
+      <Filter>core\reios</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\achievements\achievements.h">
+      <Filter>core\achievements</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\lua\lua.h">
+      <Filter>core\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\wsi\context.h">
+      <Filter>core\wsi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\wsi\libretro.h">
+      <Filter>core\wsi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\windows\comptr.h">
+      <Filter>core\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\build.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\cheats.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\emulator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\serialize.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\stdclass.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\types.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\debug\gdb_server.h">
+      <Filter>core\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\CustomTexture.h">
+      <Filter>core\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\osd.h">
+      <Filter>core\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\sorter.h">
+      <Filter>core\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\tileclip.h">
+      <Filter>core\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\TexCache.h">
+      <Filter>core\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\texconv.h">
+      <Filter>core\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_buffer.h">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_drawer.h">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_pipeline.h">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_renderpass.h">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\oit\oit_shaders.h">
+      <Filter>core\rend\vulkan\oit</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\buffer.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\commandpool.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\compiler.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\drawer.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\pipeline.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\quad.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\shaders.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\texture.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\utils.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vmallocator.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\overlay.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vulkan_context.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vulkan.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\vulkan\vk_context_lr.h">
+      <Filter>core\rend\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_driver.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_overlay.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_renderer.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_renderstate.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_shaders.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_texture.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11context.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11context_lr.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\dx11_naomi2.h">
+      <Filter>core\rend\dx11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\oit\dx11_oitbuffers.h">
+      <Filter>core\rend\dx11\oit</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rend\dx11\oit\dx11_oitshaders.h">
+      <Filter>core\rend\dx11\oit</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rec-x64\xbyak_base.h">
+      <Filter>core\rec-x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\rec-x64\x64_regalloc.h">
+      <Filter>core\rec-x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\bitvector.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\game_input.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\input_queue.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\platform_linux.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\platform_windows.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\ggpo_poll.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\ring_buffer.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\static_buffer.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\sync.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\timesync.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\ggpo_types.h">
+      <Filter>core\deps\ggpo\lib\ggpo</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\backend.h">
+      <Filter>core\deps\ggpo\lib\ggpo\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\p2p.h">
+      <Filter>core\deps\ggpo\lib\ggpo\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\spectator.h">
+      <Filter>core\deps\ggpo\lib\ggpo\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\backends\synctest.h">
+      <Filter>core\deps\ggpo\lib\ggpo\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp_msg.h">
+      <Filter>core\deps\ggpo\lib\ggpo\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp_proto.h">
+      <Filter>core\deps\ggpo\lib\ggpo\network</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\ggpo\lib\ggpo\network\udp.h">
+      <Filter>core\deps\ggpo\lib\ggpo\network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{3CEB2A32-847A-3206-959C-AC91765B7622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\achievements">
+      <UniqueIdentifier>{08938911-1EC5-3154-BFFE-D2C2E9DAD095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\archive">
+      <UniqueIdentifier>{8434A386-6D58-3D28-AF93-6319A359B1C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\audio">
+      <UniqueIdentifier>{778AA726-E9A9-3239-8716-88690301838F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\cfg">
+      <UniqueIdentifier>{11E9827E-2477-32E4-849B-6E01C8E41E86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\debug">
+      <UniqueIdentifier>{A02CF72F-0BF4-31BF-B2D2-6195FA82CDB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps">
+      <UniqueIdentifier>{96E36D58-BC18-38BD-AE65-637CAE63C12B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\chdpsr">
+      <UniqueIdentifier>{A3DA74B2-D8C0-32ED-A26D-6B7076F886EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\ggpo">
+      <UniqueIdentifier>{2B13583D-FD30-3B85-8417-A2BEDB1926D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\ggpo\lib">
+      <UniqueIdentifier>{6923574F-0B60-3CFB-9D57-9EFE0E002A2F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\ggpo\lib\ggpo">
+      <UniqueIdentifier>{966328CA-C587-3800-95D2-885F6AE25C7A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\ggpo\lib\ggpo\backends">
+      <UniqueIdentifier>{346F8B0C-737D-36D4-91CB-3D4C4D0433C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\ggpo\lib\ggpo\network">
+      <UniqueIdentifier>{1F5A5312-7C15-3E0B-B360-9D18DB2BD8FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\libretro-common">
+      <UniqueIdentifier>{297B61A5-6744-3EF0-8EE4-72A748973585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\libretro-common\compat">
+      <UniqueIdentifier>{AF2236B7-2C42-3717-B9AB-2C9E316D49BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\libretro-common\encodings">
+      <UniqueIdentifier>{6AEF4281-F17B-322E-8DDC-601784A62D65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\libretro-common\file">
+      <UniqueIdentifier>{7A1689B6-C6EF-3A8B-A746-1F076D8DA8E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\libretro-common\memmap">
+      <UniqueIdentifier>{0DE2652B-B1B6-3F81-9343-B913A49E35B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\libretro-common\string">
+      <UniqueIdentifier>{F501909A-2904-30D3-A928-98B7574B7511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\libretro-common\vfs">
+      <UniqueIdentifier>{70D6BCF1-3B08-3481-A64B-C7195D27CA63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\lzma">
+      <UniqueIdentifier>{CBFE8009-A7DC-33BE-9BAD-6E0344ED600D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\md5">
+      <UniqueIdentifier>{2B961D89-2F23-3D6F-BDEE-19BF131821AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\picotcp">
+      <UniqueIdentifier>{18D1B96A-6D0A-304C-84AB-A138B4D26956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\picotcp\include">
+      <UniqueIdentifier>{ADCDC4C8-98B6-3307-AEA0-1A0B053ABF35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\picotcp\include\arch">
+      <UniqueIdentifier>{33E8A593-569F-3485-BD9B-21A9C32B2F01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\picotcp\modules">
+      <UniqueIdentifier>{C38B52EA-E2F6-3F09-B867-B2A110A07CCC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\picotcp\stack">
+      <UniqueIdentifier>{6106343B-894A-34C3-BC22-F42357233CDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\deps\xbrz">
+      <UniqueIdentifier>{5BAAB218-EFEE-373E-90C4-BA7F8229CCA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw">
+      <UniqueIdentifier>{4BE97C67-16D8-32D0-9FB4-86F4605ACA25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\aica">
+      <UniqueIdentifier>{ED70BAD1-B6B6-3207-8A79-B729197D5D54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\arm7">
+      <UniqueIdentifier>{00C1CD81-331E-3D71-8A50-69AC6A81E285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\bba">
+      <UniqueIdentifier>{2A786EFA-74DA-38E9-A089-13DF094DDCFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\flashrom">
+      <UniqueIdentifier>{E22FE788-4155-3902-B449-EF3653F9C4FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\gdrom">
+      <UniqueIdentifier>{C7ED73E7-9D43-39AB-AA1F-C79FADF70D01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\holly">
+      <UniqueIdentifier>{D7B22E8F-B902-305C-86DE-35B10F819717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\maple">
+      <UniqueIdentifier>{607FD202-6102-33D3-95FE-64791DDFAA10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\mem">
+      <UniqueIdentifier>{51299A07-2654-3486-8CC5-2ED3BAD87F89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\modem">
+      <UniqueIdentifier>{86B510D5-AB2F-3B7E-B028-737BDD349942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\naomi">
+      <UniqueIdentifier>{18D3D27C-38BB-3CAA-A985-06CAE18FA7F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\pvr">
+      <UniqueIdentifier>{3C33C8D2-8488-3C46-9CA6-5955FC97AE4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\sh4">
+      <UniqueIdentifier>{905C2FEB-3D57-3C3E-8860-67037331D7E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\sh4\dyna">
+      <UniqueIdentifier>{90B0BA6A-1F19-367E-BECE-DB0853EB6404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\sh4\interpr">
+      <UniqueIdentifier>{74FE28EF-65F4-35BD-AFC8-84F685870D6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hw\sh4\modules">
+      <UniqueIdentifier>{C1DA3782-309D-33E5-963C-4EAB789E029A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\imgread">
+      <UniqueIdentifier>{D26A9665-FE6A-366B-B0ED-C41038079775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\log">
+      <UniqueIdentifier>{C6FBBE26-E631-3B57-90F8-914AAC848780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\lua">
+      <UniqueIdentifier>{5466D83E-64BF-397A-BAF2-63299EA9C81A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\network">
+      <UniqueIdentifier>{64C13941-E2ED-3B55-8BBB-A94B184796A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\oslib">
+      <UniqueIdentifier>{060A99AD-C499-38B8-B57D-1EEC557515EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\rec-x64">
+      <UniqueIdentifier>{B06492DA-7D6B-315D-99DE-6EE49C436657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\reios">
+      <UniqueIdentifier>{AE9BE056-5275-363E-96B9-49357EC56713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\rend">
+      <UniqueIdentifier>{2BCBF11A-9A0A-38F2-AC5C-C4CD384D8944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\rend\dx11">
+      <UniqueIdentifier>{73336153-EF8A-3C26-B4C4-9DBFB1BA274E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\rend\dx11\oit">
+      <UniqueIdentifier>{17AEEBE0-A6BB-32FA-BADB-D7D84D07FEBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\rend\norend">
+      <UniqueIdentifier>{47E97F7D-2297-35D9-9C74-6F23F1A7BD75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\rend\vulkan">
+      <UniqueIdentifier>{7D4D932A-6897-3AD4-B555-440D7D5517FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\rend\vulkan\oit">
+      <UniqueIdentifier>{C339EC96-2EB9-3EE6-974B-3F8530EEF0D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\windows">
+      <UniqueIdentifier>{3A826311-E11A-396D-BDED-421E7B9B0E47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\wsi">
+      <UniqueIdentifier>{42E6003B-B749-3370-9CB1-AE201E7E382B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{4773D312-1A04-3C06-A570-1B4CDF89E203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\libretro">
+      <UniqueIdentifier>{F7C82CA8-13FD-34EA-949D-C0C3EDA63D25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

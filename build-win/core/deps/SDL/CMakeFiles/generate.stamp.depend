@@ -1,0 +1,35 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLanguage.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceRuns.cmake
+C:/Users/Blood/Desktop/flycast/flycast/build-win/core/deps/SDL/SDL_config.h.intermediate
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/CMakeLists.txt
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/SDL2.spec.in
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/cmake/CheckCPUArchitecture.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/cmake/macros.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/cmake/sdlchecks.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/cmake/sdlfind.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/cmake/sdlplatform.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/cmake_uninstall.cmake.in
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/include/SDL_config.h.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/include/SDL_revision.h.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/sdl2-config.in
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/SDL/sdl2.pc.in

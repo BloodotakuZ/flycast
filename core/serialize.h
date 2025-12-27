@@ -148,6 +148,8 @@ class Serializer : public SerializeBase
 public:
 	Serializer()
 		: Serializer(nullptr, std::numeric_limits<size_t>::max(), false) {}
+	Serializer(bool rollback)
+		: Serializer(nullptr, std::numeric_limits<size_t>::max(), rollback) {}
 
 	Serializer(void *data, size_t limit, bool rollback = false);
 

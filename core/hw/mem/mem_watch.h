@@ -44,6 +44,8 @@ class Watcher
 	PageMap pages;
 
 public:
+	Watcher() : started(false) {}
+
 	void protect()
 	{
 		if (!started)

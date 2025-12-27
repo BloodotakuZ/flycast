@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/miniupnpc/CMakeLists.txt
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/miniupnpc/miniupnpc.pc.in
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/miniupnpc/miniupnpcstrings.h.cmake

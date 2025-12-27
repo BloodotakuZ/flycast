@@ -76,8 +76,6 @@ static void getLocalInput(MapleInputState inputState[4])
 #ifdef USE_GGPO
 #include "ggponet.h"
 #include "emulator.h"
-#include "ui/gui.h"
-#include "ui/gui_util.h"
 #include "hw/mem/mem_watch.h"
 #include <string.h>
 #include <chrono>
@@ -85,9 +83,13 @@ static void getLocalInput(MapleInputState inputState[4])
 #include <mutex>
 #include <unordered_map>
 #include <numeric>
-#include "imgui.h"
 #include "miniupnp.h"
 #include "hw/naomi/naomi_cart.h"
+#ifndef LIBRETRO
+#include "ui/gui.h"
+#include "ui/gui_util.h"
+#include "imgui.h"
+#endif
 
 //#define SYNC_TEST 1
 
@@ -879,6 +881,7 @@ std::future<bool> startNetwork()
 
 void displayStats()
 {
+#ifndef LIBRETRO
 	if (!active())
 		return;
 	GGPONetworkStats stats;
@@ -933,6 +936,7 @@ void displayStats()
 	}
 
 	ImGui::End();
+#endif
 }
 
 void endOfFrame()

@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/glslang/CHANGES.md
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/glslang/CMakeLists.txt
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/glslang/build_info.h.tmpl
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/glslang/parse_version.cmake

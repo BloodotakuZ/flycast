@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeASMInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeASM_MASMInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeASMLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeASM_MASMLinkerInformation.cmake
+C:/Users/Blood/Desktop/flycast/flycast/build-libretro/CMakeFiles/4.2.0/CMakeASM_MASMCompiler.cmake
+C:/Users/Blood/Desktop/flycast/flycast/core/deps/libchdr/deps/lzma-24.05/CMakeLists.txt

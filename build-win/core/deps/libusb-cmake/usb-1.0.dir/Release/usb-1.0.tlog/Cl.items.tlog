@@ -1,0 +1,11 @@
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\core.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\core.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\descriptor.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\descriptor.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\hotplug.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\hotplug.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\io.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\io.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\strerror.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\strerror.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\sync.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\sync.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\events_windows.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\events_windows.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\threads_windows.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\threads_windows.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_common.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\windows_common.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_usbdk.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\windows_usbdk.obj
+C:\Users\Blood\Desktop\flycast\flycast\core\deps\libusb-cmake\libusb\libusb\os\windows_winusb.c;C:\Users\Blood\Desktop\flycast\flycast\build-win\core\deps\libusb-cmake\usb-1.0.dir\Release\windows_winusb.obj

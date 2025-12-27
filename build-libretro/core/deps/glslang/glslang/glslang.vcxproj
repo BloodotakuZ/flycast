@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7A0CB592-6ECD-347B-8CFE-122224EC3CC0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>glslang</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glslang.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glslangd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glslang.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glslang</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glslang.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glslang</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glslang.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glslang</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GR-</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GR-</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GR-</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_HAS_EXCEPTIONS=0;ENABLE_SPIRV;GLSLANG_OSINCLUDE_WIN32;ENABLE_OPT=0;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /GR-</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\..;C:\Users\Blood\Desktop\flycast\flycast\build-libretro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/core/deps/glslang/glslang/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/core/deps/glslang/glslang/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/core/deps/glslang/glslang/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/core/deps/glslang/glslang/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/core/deps/glslang/glslang/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/core/deps/glslang/glslang/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Blood/Desktop/flycast/flycast/core/deps/glslang/glslang/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-libretro --check-stamp-file C:/Users/Blood/Desktop/flycast/flycast/build-libretro/core/deps/glslang/glslang/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Blood\Desktop\flycast\flycast\build-libretro\core\deps\glslang\glslang\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\CInterface\glslang_c_interface.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Public\ShaderLang.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\arrays.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\BaseTypes.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\Common.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\ConstantUnion.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\glslang_c_interface.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\glslang_c_shader_types.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\InfoSink.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\InitializeGlobals.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\intermediate.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\PoolAlloc.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\ResourceLimits.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\ShHandle.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\SpirvIntrinsics.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\Types.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\Include\visibility.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\GenericCodeGen\CodeGen.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\GenericCodeGen\Link.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\OSDependent\Windows\ossource.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\OSDependent\osinclude.h" />
+    <None Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\glslang.y">
+    </None>
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\glslang_tab.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\attribute.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\Constant.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\iomapper.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\InfoSink.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\Initialize.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\IntermTraverse.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\Intermediate.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\ParseContextBase.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\ParseHelper.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\PoolAlloc.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\RemoveTree.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\Scan.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\ShaderLang.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\SpirvIntrinsics.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\SymbolTable.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\Versions.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\intermOut.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\limits.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\linkValidate.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\parseConst.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\reflection.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\preprocessor\Pp.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\preprocessor\PpAtom.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\preprocessor\PpContext.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\preprocessor\PpScanner.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\preprocessor\PpTokens.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\propagateNoContraction.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\attribute.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\glslang_tab.cpp.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\gl_types.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\Initialize.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\iomapper.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\LiveTraverser.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\localintermediate.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\ParseHelper.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\reflection.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\RemoveTree.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\Scan.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\ScanContext.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\SymbolTable.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\Versions.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\parseVersions.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\propagateNoContraction.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\preprocessor\PpContext.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\glslang\MachineIndependent\preprocessor\PpTokens.h" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GlslangToSpv.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\InReadableOrder.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\Logger.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\SpvBuilder.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\SpvPostProcess.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\doc.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\SpvTools.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\disassemble.cpp" />
+    <ClCompile Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\CInterface\spirv_c_interface.cpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\bitutils.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\spirv.hpp" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GLSL.std.450.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GLSL.ext.EXT.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GLSL.ext.KHR.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GlslangToSpv.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\hex_float.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\Logger.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\SpvBuilder.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\spvIR.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\doc.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\SpvTools.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\disassemble.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GLSL.ext.AMD.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GLSL.ext.NV.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GLSL.ext.ARM.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\GLSL.ext.QCOM.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\NonSemanticDebugPrintf.h" />
+    <ClInclude Include="C:\Users\Blood\Desktop\flycast\flycast\core\deps\glslang\SPIRV\NonSemanticShaderDebugInfo100.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Blood\Desktop\flycast\flycast\build-libretro\ZERO_CHECK.vcxproj">
+      <Project>{9BD86B6C-A530-3E01-AA9C-DABD4D619A3E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

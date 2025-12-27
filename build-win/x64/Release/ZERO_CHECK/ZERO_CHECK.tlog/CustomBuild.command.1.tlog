@@ -1,0 +1,10 @@
+^C:\USERS\BLOOD\DESKTOP\FLYCAST\FLYCAST\BUILD-WIN\CMAKEFILES\7A0E0C931936B3BA185826321EB7688E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Blood/Desktop/flycast/flycast -BC:/Users/Blood/Desktop/flycast/flycast/build-win --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Blood/Desktop/flycast/flycast/build-win/flycast.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

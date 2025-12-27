@@ -119,7 +119,7 @@ OptionString NetworkServer("", "");
 Option<int> LocalPort("", 0);
 Option<bool> EmulateBBA(CORE_OPTION_NAME "_emulate_bba", false);
 Option<bool> EnableUPnP(CORE_OPTION_NAME "_upnp", true);
-Option<bool> GGPOEnable("", false);
+Option<bool> GGPOEnable("", true);
 Option<int> GGPODelay("", 0);
 Option<bool> NetworkStats("", false);
 Option<int> GGPOAnalogAxes("", 0);

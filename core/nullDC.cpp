@@ -48,6 +48,21 @@ struct SavestateHeader
 	static constexpr const char *MAGIC = "FLYSAVE1";
 };
 
+static bool is_net_savestate_path(const std::string& path)
+{
+	static const char kNetExt[] = ".net";
+	if (path.size() < (sizeof(kNetExt) - 1))
+		return false;
+	return path.compare(path.size() - (sizeof(kNetExt) - 1), sizeof(kNetExt) - 1, kNetExt) == 0;
+}
+
+static std::string resolve_savestate_path(int index, const std::string& filename, bool writable)
+{
+	if (!filename.empty())
+		return filename;
+	return hostfs::getSavestatePath(index, writable);
+}
+
 int flycast_init(int argc, char* argv[])
 {
 #if defined(TEST_AUTOMATION)
@@ -146,65 +161,97 @@ void flycast_term()
 	os_TermInput();
 }
 
-void dc_savestate(int index, const u8 *pngData, u32 pngSize)
+std::string get_net_savestate_file_path(bool writable)
+{
+	return hostfs::getSavestatePath(-1, writable);
+}
+
+static void dc_savestate_impl(int index, const std::string& filename, const u8 *pngData, u32 pngSize)
 {
 	if (settings.network.online)
 		return;
 
 	lastStateFile.clear();
 
-	Serializer ser;
-	dc_serialize(ser);
-
-	void *data = malloc(ser.size());
-	if (data == nullptr)
+	std::string resolved = resolve_savestate_path(index, filename, true);
+	bool isNetState = is_net_savestate_path(resolved);
+	bool rollbackState = index == -1 || isNetState;
+	if (isNetState)
 	{
-		WARN_LOG(SAVESTATE, "Failed to save state - could not malloc %d bytes", (int)ser.size());
-		os_notify("Save state failed - memory full", 5000);
-    	return;
+		pngData = nullptr;
+		pngSize = 0;
 	}
 
-	ser = Serializer(data, ser.size());
-	dc_serialize(ser);
+	size_t stateSize = 0;
+	try {
+		Serializer sizer(rollbackState);
+		dc_serialize(sizer);
+		stateSize = sizer.size();
+	} catch (const Serializer::Exception& e) {
+		WARN_LOG(SAVESTATE, "Failed to size state: %s", e.what());
+		os_notify("Save state failed", 5000, e.what());
+		return;
+	}
 
-	std::string filename = hostfs::getSavestatePath(index, true);
-	FILE *f = nowide::fopen(filename.c_str(), "wb");
+	void *data = malloc(stateSize);
+	if (data == nullptr)
+	{
+		WARN_LOG(SAVESTATE, "Failed to save state - could not malloc %d bytes", (int)stateSize);
+		os_notify("Save state failed - memory full", 5000);
+		return;
+	}
+
+	try {
+		Serializer ser(data, stateSize, rollbackState);
+		dc_serialize(ser);
+		stateSize = ser.size();
+	} catch (const Serializer::Exception& e) {
+		WARN_LOG(SAVESTATE, "Failed to save state: %s", e.what());
+		os_notify("Save state failed", 5000, e.what());
+		free(data);
+		return;
+	}
+
+	FILE *f = nowide::fopen(resolved.c_str(), "wb");
 	if (f == nullptr)
 	{
-		WARN_LOG(SAVESTATE, "Failed to save state - could not open %s for writing", filename.c_str());
+		WARN_LOG(SAVESTATE, "Failed to save state - could not open %s for writing", resolved.c_str());
 		os_notify("Cannot open save file", 5000);
 		free(data);
     	return;
 	}
 
 	RZipFile zipFile;
-	SavestateHeader header;
-	header.init();
-	header.pngSize = pngSize;
-	if (std::fwrite(&header, sizeof(header), 1, f) != 1)
-		goto fail;
-	if (pngSize > 0 && std::fwrite(pngData, 1, pngSize, f) != pngSize)
-		goto fail;
+	if (!isNetState)
+	{
+		SavestateHeader header;
+		header.init();
+		header.pngSize = pngSize;
+		if (std::fwrite(&header, sizeof(header), 1, f) != 1)
+			goto fail;
+		if (pngSize > 0 && std::fwrite(pngData, 1, pngSize, f) != pngSize)
+			goto fail;
+	}
 
 #if 0
 	// Uncompressed savestate
-	std::fwrite(data, 1, ser.size(), f);
-	std::fclose(f);
+		std::fwrite(data, 1, ser.size(), f);
+		std::fclose(f);
 #else
 	if (!zipFile.Open(f, true))
 		goto fail;
-	if (zipFile.Write(data, ser.size()) != ser.size())
+	if (zipFile.Write(data, stateSize) != stateSize)
 		goto fail;
 	zipFile.Close();
 #endif
 
 	free(data);
-	NOTICE_LOG(SAVESTATE, "Saved state to %s size %d", filename.c_str(), (int)ser.size());
+	NOTICE_LOG(SAVESTATE, "Saved state to %s size %d", resolved.c_str(), (int)stateSize);
 	os_notify("State saved", 2000);
 	return;
 
 fail:
-	WARN_LOG(SAVESTATE, "Failed to save state - error writing %s", filename.c_str());
+	WARN_LOG(SAVESTATE, "Failed to save state - error writing %s", resolved.c_str());
 	os_notify("Error saving state", 5000);
 	if (zipFile.rawFile() != nullptr)
 		zipFile.Close();
@@ -214,17 +261,35 @@ fail:
 	// delete failed savestate?
 }
 
-void dc_loadstate(int index)
+void dc_savestate(int index, const u8 *pngData, u32 pngSize)
+{
+	dc_savestate_impl(index, std::string(), pngData, pngSize);
+}
+
+void dc_savestate(const std::string& filename)
+{
+	dc_savestate_impl(0, filename, nullptr, 0);
+}
+
+void dc_savestate(int index, const std::string& filename)
+{
+	dc_savestate_impl(index, filename, nullptr, 0);
+}
+
+static void dc_loadstate_impl(int index, const std::string& filename)
 {
 	if (settings.raHardcoreMode)
 		return;
 	u32 total_size = 0;
 
-	std::string filename = hostfs::getSavestatePath(index, false);
-	FILE *f = hostfs::storage().openFile(filename, "rb");
+	std::string resolved = resolve_savestate_path(index, filename, false);
+	bool isNetState = is_net_savestate_path(resolved);
+	bool rollbackState = index == -1 || isNetState;
+
+	FILE *f = hostfs::storage().openFile(resolved, "rb");
 	if (f == nullptr)
 	{
-		WARN_LOG(SAVESTATE, "Failed to load state - could not open %s for reading", filename.c_str());
+		WARN_LOG(SAVESTATE, "Failed to load state - could not open %s for reading", resolved.c_str());
 		os_notify("Save state not found", 2000);
 		return;
 	}
@@ -243,7 +308,7 @@ void dc_loadstate(int index)
 		std::fseek(f, 0, SEEK_SET);
 	}
 
-	if (index == -1 && config::GGPOEnable)
+	if (rollbackState && config::GGPOEnable)
 	{
 		long pos = std::ftell(f);
 		MD5Sum().add(f)
@@ -293,18 +358,44 @@ void dc_loadstate(int index)
 	}
 
 	try {
-		Deserializer deser(data, total_size);
+		Deserializer deser(data, total_size, rollbackState);
 		emu.loadstate(deser);
-	    NOTICE_LOG(SAVESTATE, "Loaded state ver %d from %s size %d", deser.version(), filename.c_str(), total_size);
-		if (deser.size() != total_size)
+	    NOTICE_LOG(SAVESTATE, "Loaded state ver %d from %s size %d", deser.version(), resolved.c_str(), total_size);
+		if (deser.size() != total_size && !rollbackState)
 			// Note: this isn't true for RA savestates
 			WARN_LOG(SAVESTATE, "Savestate size %d but only %d bytes used", total_size, (int)deser.size());
 	} catch (const Deserializer::Exception& e) {
-		ERROR_LOG(SAVESTATE, "%s", e.what());
-		os_notify("Failed to load state", 5000, e.what());
+		if (rollbackState) {
+			try {
+				Deserializer deser(data, total_size, false);
+				emu.loadstate(deser);
+			    NOTICE_LOG(SAVESTATE, "Loaded legacy state ver %d from %s size %d", deser.version(), resolved.c_str(), total_size);
+			} catch (const Deserializer::Exception& e2) {
+				ERROR_LOG(SAVESTATE, "%s", e2.what());
+				os_notify("Failed to load state", 5000, e2.what());
+			}
+		} else {
+			ERROR_LOG(SAVESTATE, "%s", e.what());
+			os_notify("Failed to load state", 5000, e.what());
+		}
 	}
 
 	free(data);
+}
+
+void dc_loadstate(int index)
+{
+	dc_loadstate_impl(index, std::string());
+}
+
+void dc_loadstate(const std::string& filename)
+{
+	dc_loadstate_impl(0, filename);
+}
+
+void dc_loadstate(int index, const std::string& filename)
+{
+	dc_loadstate_impl(index, filename);
 }
 
 time_t dc_getStateCreationDate(int index)

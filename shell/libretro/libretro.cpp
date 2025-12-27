@@ -17,6 +17,15 @@
 #include <cstdio>
 #include <cstdarg>
 #include <math.h>
+#ifdef _WIN32
+#include <windows.h>
+#include <intrin.h>
+#ifndef PATH_MAX
+#define PATH_MAX MAX_PATH
+#endif
+#else
+#include <limits.h>
+#endif
 #include "types.h"
 #ifndef _WIN32
 #include <sys/time.h>
@@ -62,6 +71,7 @@
 #include "cheats.h"
 #include "rend/osd.h"
 #include "cfg/option.h"
+#include "network/ggpo.h"
 #include "version.h"
 #include "oslib/oslib.h"
 #include "rend/CustomTexture.h"
@@ -372,6 +382,7 @@ void retro_init()
 #endif
 		emu.init();
 	emuInited = true;
+	config::GGPOEnable.override(true);
 }
 
 void retro_deinit()
@@ -2374,22 +2385,31 @@ size_t retro_get_memory_size(unsigned type)
    return 0;
 }
 
+static bool use_rollback_state()
+{
+	// GGPO uses rollback states; regular RetroArch states must be full.
+	return ggpo::active();
+}
+
 size_t retro_serialize_size()
 {
 	DEBUG_LOG(SAVESTATE, "retro_serialize_size");
 	std::lock_guard<std::mutex> lock(mtx_serialization);
 
+	const bool rollback = use_rollback_state();
+	bool stopped = false;
 	if (!first_run)
 		try {
 			emu.stop();
+			stopped = true;
 		} catch (const FlycastException& e) {
 			ERROR_LOG(COMMON, "%s", e.what());
 			return 0;
 		}
 
-	Serializer ser;
+	Serializer ser(rollback);
 	dc_serialize(ser);
-	if (!first_run)
+	if (stopped)
 		emu.start();
 
 	return ser.size();
@@ -2400,23 +2420,26 @@ bool retro_serialize(void *data, size_t size)
 	DEBUG_LOG(SAVESTATE, "retro_serialize %d bytes", (int)size);
 	std::lock_guard<std::mutex> lock(mtx_serialization);
 
+	const bool rollback = use_rollback_state();
+	bool stopped = false;
 	if (!first_run)
 		try {
 			emu.stop();
+			stopped = true;
 		} catch (const FlycastException& e) {
 			ERROR_LOG(COMMON, "%s", e.what());
 			return false;
 		}
 	bool result = false;
 	try {
-		Serializer ser(data, size);
+		Serializer ser(data, size, rollback);
 		dc_serialize(ser);
 		result = true;
 	} catch (const Serializer::Exception& e) {
 		ERROR_LOG(SAVESTATE, "Saving state failed: %s", e.what());
 	} 
 
-	if (!first_run)
+	if (stopped)
 		emu.start();
 
 	return result;
@@ -2427,26 +2450,37 @@ bool retro_unserialize(const void * data, size_t size)
 	DEBUG_LOG(SAVESTATE, "retro_unserialize");
 	std::lock_guard<std::mutex> lock(mtx_serialization);
 
+	const bool rollback = use_rollback_state();
+	bool stopped = false;
 	if (!first_run)
 		try {
 			emu.stop();
+			stopped = true;
 		} catch (const FlycastException& e) {
 			ERROR_LOG(COMMON, "%s", e.what());
 			return false;
 		}
 
+	bool result = false;
 	try {
-		Deserializer deser(data, size);
+		Deserializer deser(data, size, rollback);
 		emu.loadstate(deser);
 	    retro_audio_flush_buffer();
-		if (!first_run)
-			emu.start();
-
-		return true;
+		result = true;
 	} catch (const Deserializer::Exception& e) {
-		ERROR_LOG(SAVESTATE, "Loading state failed: %s", e.what());
-		return false;
+		ERROR_LOG(SAVESTATE, "Loading state failed, trying legacy: %s", e.what());
+		try {
+			Deserializer deser(data, size, false);
+			emu.loadstate(deser);
+			retro_audio_flush_buffer();
+			result = true;
+		} catch (const Deserializer::Exception& e2) {
+			ERROR_LOG(SAVESTATE, "Loading state failed: %s", e2.what());
+		}
 	}
+	if (stopped)
+		emu.start();
+	return result;
 }
 
 // Cheats
@@ -3585,6 +3619,8 @@ void fatal_error(const char* text, ...)
 	//exit(-1);
 #ifdef __SWITCH__
 	svcExitProcess();
+#elif defined(_MSC_VER)
+	__debugbreak();
 #else
 	__builtin_trap();
 #endif
